@@ -9,8 +9,17 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 
 # 코드 안에서 이 부분을 찾아서 시트의 실제 이름으로 바꾸세요
 def load_data():
-    curr_df = conn.read(worksheet="curriculum_data") 
-    tech_df = conn.read(worksheet="teacher_data")
+    try:
+        # 시트에 있는 모든 탭 이름을 가져와서 화면에 출력해봅니다.
+        all_sheets = conn.list_worksheets()
+        st.write("현재 시트에서 찾은 탭들:", all_sheets)
+        
+        curr_df = conn.read(worksheet="curriculum_data")
+        tech_df = conn.read(worksheet="teacher_data")
+        return curr_df, tech_df
+    except Exception as e:
+        st.error(f"데이터를 불러오는 중 오류 발생: {e}")
+        return pd.DataFrame(), pd.DataFrame()
 
 curr_df, tech_df = load_data()
 
