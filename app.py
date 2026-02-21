@@ -7,15 +7,10 @@ st.set_page_config(page_title="학교 시수 조절 도우미", layout="wide")
 # 1. 구글 시트 연결 (서비스 계정 방식 자동 인식)
 conn = st.connection("gsheets", type=GSheetsConnection)
 
+# 코드 안에서 이 부분을 찾아서 시트의 실제 이름으로 바꾸세요
 def load_data():
-    try:
-        # worksheet 이름이 시트 하단 탭 이름과 정확히 일치해야 합니다.
-        curr_df = conn.read(worksheet="curriculum_data")
-        tech_df = conn.read(worksheet="teacher_data")
-        return curr_df, tech_df
-    except Exception as e:
-        st.error(f"데이터를 불러오는 중 오류 발생: {e}")
-        return pd.DataFrame(), pd.DataFrame()
+    curr_df = conn.read(worksheet="curriculum_data") 
+    tech_df = conn.read(worksheet="teacher_data")
 
 curr_df, tech_df = load_data()
 
