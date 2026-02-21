@@ -2,88 +2,81 @@ import streamlit as st
 from streamlit_gsheets import GSheetsConnection
 import pandas as pd
 
-st.set_page_config(page_title="학교 시수 관리 시스템", layout="wide")
+st.set_page_config(page_title="학교 시수 조절 도우미", layout="wide")
 
-st.title("🏫 2024학년도 시수 배정 시뮬레이터")
-st.info("8학급 체제 (학년별 34시간) / 교원 52명 기준")
-
-# 1. 구글 시트 연결 설정
-# (실제 배포 시에는 .streamlit/secrets.toml에 시트 주소를 넣어야 합니다)
-url = "여러분의_구글_시트_공유_링크" 
-
+# 1. 구글 시트 연결 (서비스 계정 방식 자동 인식)
 conn = st.connection("gsheets", type=GSheetsConnection)
 
-# 데이터 불러오기 함수
 def load_data():
-    curr_df = conn.read(worksheet="curriculum_data")
-    tech_df = conn.read(worksheet="teacher_data")
-    return curr_df, tech_df
+    try:
+        # worksheet 이름이 시트 하단 탭 이름과 정확히 일치해야 합니다.
+        curr_df = conn.read(worksheet="curriculum_data")
+        tech_df = conn.read(worksheet="teacher_data")
+        return curr_df, tech_df
+    except Exception as e:
+        st.error(f"데이터를 불러오는 중 오류 발생: {e}")
+        return pd.DataFrame(), pd.DataFrame()
 
 curr_df, tech_df = load_data()
 
-# --- 사이드바: 전체 현황 요약 ---
-st.sidebar.header("📊 전체 요약")
-total_required_hours = curr_df['주당시수'].sum() * 8 # 각 학년별 34시간 * 8학급 기준
-total_supplied_hours = tech_df['배정시수'].sum()
+st.title("🏫 학교 교원 시수 관리 시스템")
 
-st.sidebar.metric("필요 총 시수 (24학급)", f"{total_required_hours} 시간")
-st.sidebar.metric("교사 배정 총 시수 (52명)", f"{total_supplied_hours} 시간")
-st.sidebar.write(f"**차이:** {total_supplied_hours - total_required_hours} 시간")
+if curr_df.empty or tech_df.empty:
+    st.warning("구글 시트에서 데이터를 불러올 수 없습니다. 시트 이름과 공유 설정을 확인해주세요.")
+else:
+    # --- 사이드바: 전체 요약 현황 ---
+    st.sidebar.header("📊 실시간 배정 현황")
+    
+    # 학년별 8학급 기준 계산
+    total_required = curr_df['주당시수'].sum() * 8 
+    total_supplied = tech_df['배정시수'].sum()
+    
+    st.sidebar.metric("총 필요 시수 (24학급)", f"{total_required}H")
+    st.sidebar.metric("교사 확보 시수 (52명)", f"{total_supplied}H")
+    
+    diff = total_supplied - total_required
+    st.sidebar.metric("시수 과부족", f"{diff}H", delta=int(diff))
 
-# --- 메인 화면 탭 ---
-tab1, tab2, tab3 = st.tabs(["📚 교육과정(수요)", "👨‍🏫 교원 명단(공급)", "⚖️ 시수 과부족 분석"])
+    # --- 메인 화면 탭 구성 ---
+    tab1, tab2, tab3 = st.tabs(["📋 교육과정 입력", "👥 교원 명단 관리", "📈 시수 분석 리포트"])
 
-with tab1:
-    st.subheader("학년별 교육과정 설정")
-    st.write("각 학년별 시수의 합이 34시간이 되어야 합니다.")
-    
-    # 학년별 합계 체크
-    for grade in ["1학년", "2학년", "3학년"]:
-        grade_sum = curr_df[curr_df['학년'] == grade]['주당시수'].sum()
-        if grade_sum != 34:
-            st.warning(f"⚠️ {grade}: 현재 {grade_sum}시간 (목표 34시간까지 {34-grade_sum}시간 남음)")
-        else:
-            st.success(f"✅ {grade}: 34시간 충족")
-            
-    edited_curr = st.data_editor(curr_df, num_rows="dynamic", key="curr_editor")
+    with tab1:
+        st.subheader("학년별 교육과정 시수 (각 학년 합계 34시간)")
+        edited_curr = st.data_editor(curr_df, num_rows="dynamic", use_container_width=True, key="curr_edit")
+        
+        # 학년별 합계 검사
+        for grade in ["1학년", "2학년", "3학년"]:
+            g_sum = edited_curr[edited_curr['학년'] == grade]['주당시수'].sum()
+            if g_sum != 34:
+                st.error(f"⚠️ {grade} 합계: {g_sum}H (목표: 34H)")
+            else:
+                st.success(f"✅ {grade} 합계: 34H 충족")
 
-with tab2:
-    st.subheader("교원 명단 및 개인별 시수")
-    st.write("선생님별 담당 교과와 시수(12~16시간)를 조정하세요.")
-    
-    # 시수 범위 체크 (12~16시간)
-    out_of_range = tech_df[(tech_df['배정시수'] < 12) | (tech_df['배정시수'] > 16)]
-    if not out_of_range.empty:
-        st.error(f"⚠️ 시수 범위(12-16)를 벗어난 분이 {len(out_of_range)}명 있습니다.")
-    
-    edited_tech = st.data_editor(tech_df, num_rows="dynamic", key="tech_editor")
+    with tab2:
+        st.subheader("교원별 담당 교과 및 시수 (12~16시간)")
+        edited_tech = st.data_editor(tech_df, num_rows="dynamic", use_container_width=True, key="tech_edit")
+        
+        # 개인별 시수 적정성 검사
+        invalid_tech = edited_tech[(edited_tech['배정시수'] < 12) | (edited_tech['배정시수'] > 16)]
+        if not invalid_tech.empty:
+            st.warning(f"⚠️ 시수 범위를 벗어난 교사: {', '.join(invalid_tech['성함'].tolist())}")
 
-with tab3:
-    st.subheader("교과별 수요 vs 공급 분석")
-    
-    # 1. 교과별 필요 총 시수 (교육과정 시수 * 8학급)
-    curr_summary = curr_df.groupby('교과명')['주당시수'].sum() * 8
-    curr_summary = curr_summary.reset_index().rename(columns={'주당시수': '필요시수'})
-    
-    # 2. 교과별 공급 총 시수 (교사별 시수 합계)
-    tech_summary = tech_df.groupby('담당교과')['배정시수'].sum()
-    tech_summary = tech_summary.reset_index().rename(columns={'배정시수': '확보시수', '담당교과': '교과명'})
-    
-    # 3. 데이터 병합 분석
-    analysis_df = pd.merge(curr_summary, tech_summary, on='교과명', how='outer').fillna(0)
-    analysis_df['과부족'] = analysis_df['확보시수'] - analysis_df['필요시수']
-    
-    st.dataframe(analysis_df, use_container_width=True)
-    
-    # 시각화 알림
-    for _, row in analysis_df.iterrows():
-        if row['과부족'] < 0:
-            st.error(f"[{row['교과명']}] {abs(row['과부족'])}시간 부족 (교사 추가 배정 필요)")
-        elif row['과부족'] > 0:
-            st.info(f"[{row['교과명']}] {row['과부족']}시간 남음")
+    with tab3:
+        st.subheader("교과별 수요/공급 분석")
+        # 분석 로직
+        needed = curr_df.groupby('교과명')['주당시수'].sum() * 8
+        supplied = tech_df.groupby('담당교과')['배정시수'].sum()
+        
+        analysis = pd.DataFrame({'필요': needed, '공급': supplied}).fillna(0)
+        analysis['차이'] = analysis['공급'] - analysis['필요']
+        
+        st.dataframe(analysis.style.highlight_min(subset=['차이'], color='#ffaaaa'), use_container_width=True)
 
-# 저장 버튼
-if st.button("💾 변경사항 구글 시트에 저장하기"):
-    conn.update(worksheet="curriculum_data", data=edited_curr)
-    conn.update(worksheet="teacher_data", data=edited_tech)
-    st.success("구글 시트에 성공적으로 저장되었습니다!")
+    # 저장 버튼
+    if st.button("💾 변경사항을 구글 시트에 저장"):
+        try:
+            conn.update(worksheet="curriculum_data", data=edited_curr)
+            conn.update(worksheet="teacher_data", data=edited_tech)
+            st.toast("구글 시트에 성공적으로 저장되었습니다!", icon="✅")
+        except Exception as e:
+            st.error(f"저장 중 오류 발생: {e}")
