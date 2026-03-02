@@ -2,101 +2,107 @@ import streamlit as st
 from streamlit_gsheets import GSheetsConnection
 import pandas as pd
 
-st.set_page_config(page_title="시수 조절 도우미", layout="wide")
+st.set_page_config(page_title="교원 시수 세밀 조절기", layout="wide")
 
+# 1. 구글 시트 연결
 conn = st.connection("gsheets", type=GSheetsConnection)
 
-# 1. 데이터 로드 및 전처리 함수
-@st.cache_data(ttl=60) # 할당량 문제를 위해 1분간 캐시
-def get_data():
+@st.cache_data(ttl=60)
+def get_master_data():
     try:
+        # 교육과정 배당표(uploaded_data 또는 curriculum_data)
         curr = conn.read(worksheet="curriculum_data")
+        # 교원 명단
         tech = conn.read(worksheet="teacher_data")
         
-        # [중요] 열 이름의 앞뒤 공백을 강제로 제거합니다.
-        if curr is not None: curr.columns = curr.columns.str.strip()
-        if tech is not None: tech.columns = tech.columns.str.strip()
+        curr.columns = curr.columns.str.strip()
+        tech.columns = tech.columns.str.strip()
+        
+        # 주당시수 숫자형 변환
+        curr['주당시수'] = pd.to_numeric(curr['주당시수'], errors='coerce').fillna(0)
+        tech['배정시수'] = pd.to_numeric(tech['배정시수'], errors='coerce').fillna(0)
         
         return curr, tech
     except Exception as e:
-        st.error(f"시트 읽기 오류: {e}")
+        st.error(f"데이터 로드 실패: {e}")
         return None, None
 
-# 2. 세션 상태 초기화
-if 'curr_df' not in st.session_state or 'tech_df' not in st.session_state:
-    c, t = get_data()
-    st.session_state.curr_df = c if c is not None else pd.DataFrame(columns=['학년', '교과명', '주당시수', '비고'])
-    st.session_state.tech_df = t if t is not None else pd.DataFrame(columns=['성함', '담당교과', '배정시수', '비고'])
+# 데이터 초기화
+c_raw, t_raw = get_master_data()
+if 'curr_df' not in st.session_state: st.session_state.curr_df = c_raw
+if 'tech_df' not in st.session_state: st.session_state.tech_df = t_raw
 
-st.title("🏫 학교 교원 시수 관리 시스템")
+st.title("🏫 세밀한 교원 시수 배정 시스템")
 
-# --- 진단 도구 (문제가 생기면 이 부분을 확인하세요) ---
-with st.expander("🔍 연결 상태 및 열 이름 확인 (문제가 있을 때만 열어보세요)"):
-    st.write("현재 '교육과정' 시트 열 이름:", list(st.session_state.curr_df.columns))
-    st.write("현재 '교원명단' 시트 열 이름:", list(st.session_state.tech_df.columns))
-    if st.button("♻️ 세션 강제 초기화 (데이터가 꼬였을 때 클릭)"):
-        st.cache_data.clear()
-        del st.session_state.curr_df
-        del st.session_state.tech_df
-        st.rerun()
-
-# --- 사이드바 및 계산 ---
+# --- [사이드바] 기본 설정 ---
 with st.sidebar:
-    st.header("⚙️ 요약")
-    
-    # 에러 방지를 위한 안전한 합계 계산 함수
-    def safe_sum(df, col_name):
-        if col_name in df.columns:
-            return pd.to_numeric(df[col_name], errors='coerce').sum()
-        return 0
-
-    total_need = safe_sum(st.session_state.curr_df, '주당시수') * 8
-    total_sup = safe_sum(st.session_state.tech_df, '배정시수')
-    
-    st.metric("총 필요 시수 (24학급)", f"{total_need}H")
-    st.metric("교원 공급 시수 (52명)", f"{total_sup}H")
-    if st.button("🔄 시트에서 새로고침"):
+    st.header("⚙️ 기본 설정")
+    num_classes = st.number_input("기본 학급 수 (공통과목용)", value=8)
+    if st.button("🔄 시트 데이터 새로고침"):
         st.cache_data.clear()
-        c, t = get_data()
-        st.session_state.curr_df = c
-        st.session_state.tech_df = t
         st.rerun()
 
-# --- 메인 화면 ---
-tab1, tab2, tab3 = st.tabs(["📚 교육과정 설정", "👨‍🏫 교원 명단 관리", "⚖️ 시수 과부족 분석"])
+# --- [메인] 탭 구성 ---
+tab1, tab2, tab3 = st.tabs(["📋 교육과정 마스터", "👨‍🏫 교원 배정 관리", "📊 시수 분석 보고서"])
 
 with tab1:
-    st.session_state.curr_df = st.data_editor(st.session_state.curr_df, num_rows="dynamic", use_container_width=True, key="ed_curr")
+    st.subheader("1. 교육과정 편제 및 분반 설정")
+    st.write("선택과목의 경우 '분반 수'를 실제 개설되는 반 수에 맞게 수정하세요.")
+    
+    # 필수/선택 구분을 위해 '분반수' 열이 없다면 추가
+    if '분반수' not in st.session_state.curr_df.columns:
+        st.session_state.curr_df['분반수'] = num_classes
+    
+    # 에디터 호출
+    edited_curr = st.data_editor(
+        st.session_state.curr_df, 
+        num_rows="dynamic", 
+        use_container_width=True,
+        column_config={
+            "주당시수": st.column_config.NumberColumn(format="%d H"),
+            "분반수": st.column_config.NumberColumn(help="선택과목은 실제 개설 반 수를 입력하세요.")
+        }
+    )
+    st.session_state.curr_df = edited_curr
 
 with tab2:
-    st.session_state.tech_df = st.data_editor(st.session_state.tech_df, num_rows="dynamic", use_container_width=True, key="ed_tech")
+    st.subheader("2. 교원별 담당 교과 및 시수")
+    # 교과군(국어, 수학 등)을 선택할 수 있도록 구성
+    edited_tech = st.data_editor(st.session_state.tech_df, num_rows="dynamic", use_container_width=True)
+    st.session_state.tech_df = edited_tech
 
 with tab3:
-    st.subheader("📊 과부족 분석")
-    c = st.session_state.curr_df
-    t = st.session_state.tech_df
+    st.subheader("3. 최종 시수 과부족 분석")
     
-    # 필수 열이 모두 있을 때만 분석 실행
-    if '교과명' in c.columns and '주당시수' in c.columns and '담당교과' in t.columns and '배정시수' in t.columns:
-        demand = c.groupby('교과명')['주당시수'].sum() * 8
-        demand = demand.reset_index().rename(columns={'주당시수': '필요시수'})
-        
-        supply = t.groupby('담당교과')['배정시수'].sum()
-        supply = supply.reset_index().rename(columns={'배정시수': '공급시수', '담당교과': '교과명'})
-        
-        result = pd.merge(demand, supply, on='교과명', how='outer').fillna(0)
-        result['과부족'] = result['공급시수'] - result['필요시수']
-        st.dataframe(result, use_container_width=True)
-    else:
-        st.warning("분석을 위한 열 이름(교과명, 주당시수, 담당교과, 배정시수)을 확인해주세요.")
+    # 로직: (교과별 주당시수 * 분반수) 합산 vs (교사별 배정시수) 합산
+    # 1. 수요 계산
+    curr = st.session_state.curr_df.copy()
+    curr['총소요시수'] = curr['주당시수'] * curr['분반수']
+    
+    # 교과군으로 묶기 위해 '교과명'에서 공통 키워드 추출 (예: 공통국어 -> 국어)
+    # 실제 업무에선 시트에 '교과군' 열을 따로 두는 것이 가장 정확합니다.
+    st.info("💡 팁: '국어', '수학' 등 교과군별로 합산하여 분석합니다.")
+    
+    demand_sum = curr.groupby('교과명')['총소요시수'].sum().reset_index()
+    
+    # 2. 공급 계산
+    supply_sum = st.session_state.tech_df.groupby('담당교과')['배정시수'].sum().reset_index()
+    supply_sum.columns = ['교과명', '공급시수']
+    
+    # 3. 비교 데이터프레임 생성
+    analysis = pd.merge(demand_sum, supply_sum, on='교과명', how='outer').fillna(0)
+    analysis['과부족'] = analysis['공급시수'] - analysis['총소요시수']
+    
+    # 시각화
+    def color_status(val):
+        if val < 0: return 'background-color: #ffcccc'
+        if val > 0: return 'background-color: #ccffcc'
+        return ''
 
-# --- 저장 ---
-st.divider()
-if st.button("💾 구글 시트에 최종 저장", use_container_width=True):
-    try:
-        conn.update(worksheet="curriculum_data", data=st.session_state.curr_df)
-        conn.update(worksheet="teacher_data", data=st.session_state.tech_df)
-        st.cache_data.clear()
-        st.success("저장 성공!")
-    except Exception as e:
-        st.error(f"저장 실패: {e}")
+    st.table(analysis.style.applymap(color_status, subset=['과부족']))
+
+# --- [저장] ---
+if st.button("💾 변경사항 구글 시트에 최종 저장"):
+    conn.update(worksheet="curriculum_data", data=st.session_state.curr_df)
+    conn.update(worksheet="teacher_data", data=st.session_state.tech_df)
+    st.success("저장되었습니다!")
