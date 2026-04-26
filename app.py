@@ -1,4 +1,4 @@
-# v1.1 - 대동세무고 교육과정 관리 시스템
+# v1.2 - 대동세무고 교육과정 관리 시스템
 import streamlit as st
 import pandas as pd
 import json
@@ -320,7 +320,7 @@ with tab1:
 # ════════════════════════════════════════════════════════════════
 with tab2:
     st.markdown("## 교육과정 편성표")
-    st.caption("입학년도별 전체 교육과정 — 1학기/2학기 분리 표시")
+    st.caption("입학년도별 교육과정 — 학과 공통 과목은 ○, 학과별로 다른 과목은 해당 학과 표시")
 
     col_f1, col_f2 = st.columns([3, 4])
     with col_f1:
@@ -336,38 +336,73 @@ with tab2:
     if curr_search:
         filtered_curr = [s for s in filtered_curr if curr_search in s["name"] or curr_search in (s["group"] or "")]
 
-    SCHED_COLS = [
-        ("1학년", "공통", "1학기"), ("1학년", "공통", "2학기"),
-        ("2학년", "세무회계", "1학기"), ("2학년", "세무회계", "2학기"),
-        ("2학년", "관세무역", "1학기"), ("2학년", "관세무역", "2학기"),
-        ("2학년", "세무행정", "1학기"), ("2학년", "세무행정", "2학기"),
-        ("3학년", "세무회계", "1학기"), ("3학년", "세무회계", "2학기"),
-        ("3학년", "관세무역", "1학기"), ("3학년", "관세무역", "2학기"),
-        ("3학년", "세무행정", "1학기"), ("3학년", "세무행정", "2학기"),
-    ]
+    TRACKS = ["세무회계", "관세무역", "세무행정"]
+
+    def sem_label(track_sems):
+        """운영 학기를 간단히 표현: 1학기만→'1', 2학기만→'2', 둘다→'1·2', 없음→''"""
+        has1 = any("1학기" in k for k in track_sems)
+        has2 = any("2학기" in k for k in track_sems)
+        if has1 and has2: return "1·2학기"
+        if has1: return "1학기"
+        if has2: return "2학기"
+        return ""
+
+    def make_cell(sch, grade, tracks):
+        """
+        - 1학년: 공통이므로 학기만 표시
+        - 2·3학년: 전 학과 동일하면 ○+학기, 학과별로 다르면 학과명 나열
+        """
+        if grade == "1학년":
+            keys = [k for k in sch if k.startswith("1학년|공통|")]
+            return sem_label(keys)
+
+        # 학과별 운영 여부 수집
+        track_info = {}
+        for tr in tracks:
+            keys = [k for k in sch if k.startswith(f"{grade}|{tr}|")]
+            if keys:
+                track_info[tr] = sem_label(keys)
+
+        if not track_info:
+            return ""
+
+        # 모두 동일한 학기면 ○
+        sems = list(track_info.values())
+        if len(set(sems)) == 1 and len(track_info) == len(tracks):
+            return f"○ {sems[0]}"
+
+        # 일부 학과만 운영
+        return " / ".join(f"{tr[:2]}:{sem}" for tr, sem in track_info.items())
 
     rows = []
     for s in filtered_curr:
         sch = s["schedule"]
+        grade_keys = set(k.split("|")[0] for k in sch)
         row = {
             "입학": str(s["entry_year"]),
-            "교과영역": (s["area"] or "").replace("\n", ""),
             "교과군": s["group"] or "-",
             "과목명": s["name"],
-            "기준": s["std_credits"],
-            "운영": s["op_credits"],
+            "기준학점": s["std_credits"],
+            "운영학점": s["op_credits"],
+            "1학년": make_cell(sch, "1학년", TRACKS),
+            "2학년": make_cell(sch, "2학년", TRACKS),
+            "3학년": make_cell(sch, "3학년", TRACKS),
         }
-        for grade, track, sem in SCHED_COLS:
-            k = f"{grade}|{track}|{sem}"
-            v = sch.get(k, "")
-            col_label = f"{grade[:1]}학년 {track[:2]} {sem[:1]}학기"
-            row[col_label] = v if v else ""
         rows.append(row)
 
     if rows:
         df_curr = pd.DataFrame(rows)
-        st.dataframe(df_curr, use_container_width=True, hide_index=True)
-        st.caption(f"총 {len(rows)}개 과목")
+        st.dataframe(
+            df_curr,
+            use_container_width=True,
+            hide_index=True,
+            column_config={
+                "1학년": st.column_config.TextColumn("1학년", width="medium"),
+                "2학년": st.column_config.TextColumn("2학년", width="medium"),
+                "3학년": st.column_config.TextColumn("3학년", width="medium"),
+            }
+        )
+        st.caption(f"총 {len(rows)}개 과목 | ○ = 전 학과 공통 운영 / 학과명:학기 = 해당 학과만 운영")
     else:
         st.info("조건에 맞는 과목이 없습니다.")
 
@@ -501,6 +536,28 @@ with tab4:
         edits["cross_teaching"][cross_key] = auto_rows if auto_rows else [
             {"교사명": "", "소속교과": "", "상치담당과목": "", "학년": "", "학기": "", "시수": "", "메모": ""}
         ]
+
+    # 요약 카드
+    existing = edits.get("cross_teaching", {}).get(cross_key, [])
+    filled = [r for r in existing if r.get("교사명") and r.get("상치담당과목")]
+    if filled:
+        st.markdown("#### 📌 상치교과 현황 요약")
+        cols = st.columns(min(len(filled), 4))
+        for i, r in enumerate(filled):
+            with cols[i % 4]:
+                grade_str = r.get("학년","") or ""
+                sem_str   = r.get("학기","") or ""
+                credit_str = f"{int(r['시수'])}시수" if r.get("시수") else ""
+                detail = " ".join(filter(None, [grade_str, sem_str, credit_str]))
+                st.markdown(f"""
+<div style="background:#1e2535;border:1px solid #2a3448;border-radius:8px;padding:12px 14px;margin-bottom:8px">
+  <div style="font-size:13px;font-weight:700;color:#e2e8f0">{r['교사명']}</div>
+  <div style="font-size:11px;color:#94a3b8;margin-top:2px">{r.get('소속교과','')}</div>
+  <div style="font-size:12px;color:#60a5fa;margin-top:6px">→ {r['상치담당과목']}</div>
+  <div style="font-size:11px;color:#64748b;margin-top:3px">{detail}</div>
+</div>
+""", unsafe_allow_html=True)
+        st.markdown("---")
 
     st.info("✏️ 아래 표를 직접 클릭해서 편집할 수 있습니다.")
 
