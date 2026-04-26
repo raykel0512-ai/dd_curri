@@ -1,4 +1,4 @@
-# v1.0 - 대동세무고 교육과정 관리 시스템
+# v1.1 - 대동세무고 교육과정 관리 시스템
 import streamlit as st
 import pandas as pd
 import json
@@ -20,7 +20,9 @@ st.markdown("""
 <style>
 /* 전체 배경 */
 .stApp { background-color: #0d1117; }
-.block-container { padding-top: 1.5rem; padding-bottom: 2rem; }
+/* Streamlit 기본 헤더 숨기고 상단 여백 확보 */
+#MainMenu, header[data-testid="stHeader"], footer { visibility: hidden; height: 0; }
+.block-container { padding-top: 2rem !important; padding-bottom: 2rem; max-width: 1400px; }
 
 /* 사이드바 */
 section[data-testid="stSidebar"] { background-color: #161b24; border-right: 1px solid #2a3448; }
