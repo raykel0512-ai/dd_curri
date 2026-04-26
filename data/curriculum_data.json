@@ -1,0 +1,6163 @@
+{
+  "curriculum": [
+    {
+      "entry_year": 2024,
+      "area": "기초",
+      "group": "국어",
+      "name": "국어",
+      "std_credits": 8,
+      "op_credits": 6,
+      "schedule": {
+        "1학년|공통|1학기": 3,
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "기초",
+      "group": "국어",
+      "name": "문학",
+      "std_credits": 5,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|1학기": 3,
+        "2학년|관세무역|1학기": 3,
+        "2학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "기초",
+      "group": "국어",
+      "name": "독서",
+      "std_credits": 5,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|2학기": 3,
+        "2학년|관세무역|2학기": 3,
+        "2학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "기초",
+      "group": "국어",
+      "name": "화법과 작문",
+      "std_credits": 5,
+      "op_credits": 4,
+      "schedule": {
+        "3학년|세무회계|1학기": 2,
+        "3학년|세무회계|2학기": 2,
+        "3학년|관세무역|1학기": 2,
+        "3학년|관세무역|2학기": 2,
+        "3학년|세무행정|1학기": 2,
+        "3학년|세무행정|2학기": 2
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "기초",
+      "group": "수학",
+      "name": "수학",
+      "std_credits": 8,
+      "op_credits": 6,
+      "schedule": {
+        "1학년|공통|1학기": 3,
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "기초",
+      "group": "수학",
+      "name": "수학Ⅰ",
+      "std_credits": 5,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|1학기": 3,
+        "2학년|관세무역|1학기": 3,
+        "2학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "기초",
+      "group": "수학",
+      "name": "수학Ⅱ",
+      "std_credits": 5,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|2학기": 3,
+        "2학년|관세무역|2학기": 3,
+        "2학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "기초",
+      "group": "수학",
+      "name": "확률과 통계",
+      "std_credits": 5,
+      "op_credits": 4,
+      "schedule": {
+        "3학년|세무회계|1학기": 2,
+        "3학년|세무회계|2학기": 2,
+        "3학년|관세무역|1학기": 2,
+        "3학년|관세무역|2학기": 2
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "기초",
+      "group": "영어",
+      "name": "영어",
+      "std_credits": 8,
+      "op_credits": 8,
+      "schedule": {
+        "1학년|공통|1학기": 4,
+        "1학년|공통|2학기": 4
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "기초",
+      "group": "영어",
+      "name": "영어Ⅰ",
+      "std_credits": 5,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|1학기": 3,
+        "2학년|관세무역|1학기": 3,
+        "2학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "기초",
+      "group": "영어",
+      "name": "영어Ⅱ",
+      "std_credits": 5,
+      "op_credits": 3,
+      "schedule": {
+        "3학년|세무회계|1학기": 3,
+        "3학년|관세무역|1학기": 3,
+        "3학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "기초",
+      "group": "한국사",
+      "name": "한국사",
+      "std_credits": 6,
+      "op_credits": 6,
+      "schedule": {
+        "1학년|공통|1학기": 3,
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "탐구",
+      "group": "사회",
+      "name": "통합사회",
+      "std_credits": 8,
+      "op_credits": 6,
+      "schedule": {
+        "1학년|공통|1학기": 3,
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "탐구",
+      "group": "과학",
+      "name": "통합과학",
+      "std_credits": 8,
+      "op_credits": 6,
+      "schedule": {
+        "1학년|공통|1학기": 3,
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "체육·예술",
+      "group": "체육",
+      "name": "체육",
+      "std_credits": 5,
+      "op_credits": 6,
+      "schedule": {
+        "1학년|공통|1학기": 2,
+        "1학년|공통|2학기": 2,
+        "2학년|세무회계|1학기": 1,
+        "2학년|세무회계|2학기": 1,
+        "2학년|관세무역|1학기": 1,
+        "2학년|관세무역|2학기": 1,
+        "2학년|세무행정|1학기": 1,
+        "2학년|세무행정|2학기": 1
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "체육·예술",
+      "group": "체육",
+      "name": "스포츠 생활",
+      "std_credits": 5,
+      "op_credits": 2,
+      "schedule": {
+        "3학년|세무회계|1학기": 1,
+        "3학년|세무회계|2학기": 1,
+        "3학년|관세무역|1학기": 1,
+        "3학년|관세무역|2학기": 1,
+        "3학년|세무행정|1학기": 1,
+        "3학년|세무행정|2학기": 1
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "체육·예술",
+      "group": "예술",
+      "name": "음악 감상과 비평",
+      "std_credits": 5,
+      "op_credits": 2,
+      "schedule": {
+        "1학년|공통|1학기": 2,
+        "1학년|공통|2학기": 2
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "체육·예술",
+      "group": "예술",
+      "name": "미술 창작",
+      "std_credits": 5,
+      "op_credits": 4,
+      "schedule": {
+        "2학년|세무회계|1학기": 1,
+        "2학년|세무회계|2학기": 1,
+        "2학년|관세무역|1학기": 1,
+        "2학년|관세무역|2학기": 1,
+        "2학년|세무행정|1학기": 1,
+        "2학년|세무행정|2학기": 1
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "생활·교양",
+      "group": "기술·가정",
+      "name": "사무 관리",
+      "std_credits": 5,
+      "op_credits": 6,
+      "schedule": {
+        "1학년|공통|1학기": 3,
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "생활·교양",
+      "group": "제2외국어",
+      "name": "관광 일본어",
+      "std_credits": 5,
+      "op_credits": 4,
+      "schedule": {
+        "2학년|세무회계|1학기": 2,
+        "2학년|세무회계|2학기": 2,
+        "2학년|관세무역|1학기": 2,
+        "2학년|관세무역|2학기": 2,
+        "2학년|세무행정|1학기": 2,
+        "2학년|세무행정|2학기": 2
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "전공필수",
+      "group": "고시과목",
+      "name": "성공적인 직업생활",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "2학년|세무회계|1학기": 2,
+        "2학년|세무회계|2학기": 2,
+        "2학년|관세무역|1학기": 2,
+        "2학년|관세무역|2학기": 2,
+        "2학년|세무행정|1학기": 2,
+        "2학년|세무행정|2학기": 2
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "전공필수",
+      "group": "고시과목",
+      "name": "회계 원리",
+      "std_credits": 6,
+      "op_credits": 6,
+      "schedule": {
+        "1학년|공통|1학기": 3,
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "전공필수",
+      "group": "고시과목",
+      "name": "상업 경제",
+      "std_credits": 6,
+      "op_credits": 6,
+      "schedule": {
+        "2학년|세무회계|1학기": 3,
+        "2학년|세무회계|2학기": 3,
+        "2학년|관세무역|1학기": 3,
+        "2학년|관세무역|2학기": 3,
+        "2학년|세무행정|1학기": 3,
+        "2학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "전공필수",
+      "group": "고시과목",
+      "name": "커뮤니케이션",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "3학년|세무회계|1학기": 2,
+        "3학년|세무회계|2학기": 2,
+        "3학년|관세무역|1학기": 2,
+        "3학년|관세무역|2학기": 2,
+        "3학년|세무행정|1학기": 2,
+        "3학년|세무행정|2학기": 2
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "전공필수",
+      "group": "고시과목",
+      "name": "기업과 경영",
+      "std_credits": 8,
+      "op_credits": 8,
+      "schedule": {
+        "3학년|세무회계|1학기": 4,
+        "3학년|세무회계|2학기": 4
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "전공필수",
+      "group": "고시과목",
+      "name": "비즈니스 영어",
+      "std_credits": 6,
+      "op_credits": 6,
+      "schedule": {
+        "2학년|관세무역|1학기": 3,
+        "2학년|관세무역|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "전공필수",
+      "group": "고시과목",
+      "name": "국제 상무",
+      "std_credits": 8,
+      "op_credits": 8,
+      "schedule": {
+        "3학년|관세무역|1학기": 4,
+        "3학년|관세무역|2학기": 4
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "전공필수",
+      "group": "고시외과목",
+      "name": "토익연습일반",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|2학기": 3,
+        "2학년|관세무역|2학기": 3,
+        "2학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "전공필수",
+      "group": "고시외과목",
+      "name": "토익연습실무",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "3학년|세무회계|2학기": 3,
+        "3학년|관세무역|2학기": 3,
+        "3학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "전공필수",
+      "group": "고시외과목",
+      "name": "중급 회계",
+      "std_credits": 8,
+      "op_credits": 8,
+      "schedule": {
+        "3학년|세무회계|1학기": 4,
+        "3학년|세무회계|2학기": 4,
+        "3학년|세무행정|1학기": 4,
+        "3학년|세무행정|2학기": 4
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "전공필수",
+      "group": "고시외과목",
+      "name": "관세 사무 일반",
+      "std_credits": 8,
+      "op_credits": 8,
+      "schedule": {
+        "3학년|관세무역|1학기": 4,
+        "3학년|관세무역|2학기": 4
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "전공필수",
+      "group": "고시외과목",
+      "name": "행정서비스 일반",
+      "std_credits": 6,
+      "op_credits": 6,
+      "schedule": {
+        "2학년|세무행정|1학기": 3,
+        "2학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2024,
+      "area": "전공필수",
+      "group": "고시외과목",
+      "name": "비서사무일반",
+      "std_credits": 8,
+      "op_credits": 8,
+      "schedule": {
+        "3학년|세무행정|1학기": 4,
+        "3학년|세무행정|2학기": 4
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "국어",
+      "name": "공통국어1",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "국어",
+      "name": "공통국어2",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "국어",
+      "name": "문학",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|1학기": 3,
+        "2학년|관세무역|1학기": 3,
+        "2학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "국어",
+      "name": "화법과 언어",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|2학기": 3,
+        "2학년|관세무역|2학기": 3,
+        "2학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "국어",
+      "name": "독서와 작문",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "3학년|세무회계|1학기": 3,
+        "3학년|관세무역|1학기": 3,
+        "3학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "수학",
+      "name": "공통수학1",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "수학",
+      "name": "공통수학2",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "수학",
+      "name": "대수",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|1학기": 3,
+        "2학년|관세무역|1학기": 3,
+        "2학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "수학",
+      "name": "미적분Ｉ",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|2학기": 3,
+        "2학년|관세무역|2학기": 3,
+        "2학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "수학",
+      "name": "확률과 통계",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "3학년|세무회계|1학기": 3,
+        "3학년|관세무역|1학기": 3,
+        "3학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "영어",
+      "name": "공통영어1",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "영어",
+      "name": "공통영어2",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "영어",
+      "name": "영어Ｉ",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|1학기": 3,
+        "2학년|관세무역|1학기": 3,
+        "2학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "영어",
+      "name": "영어Ⅱ",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|2학기": 3,
+        "2학년|관세무역|2학기": 3,
+        "2학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "영어",
+      "name": "영어 독해와 작문",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "3학년|세무회계|1학기": 3,
+        "3학년|관세무역|1학기": 3,
+        "3학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "한국사",
+      "name": "한국사1",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "한국사",
+      "name": "한국사2",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "사회(역사/도덕 포함)",
+      "name": "통합사회1",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "사회(역사/도덕 포함)",
+      "name": "통합사회2",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "과학",
+      "name": "통합과학1",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "과학",
+      "name": "통합과학2",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "체육",
+      "name": "체육1",
+      "std_credits": 3,
+      "op_credits": 2,
+      "schedule": {
+        "1학년|공통|1학기": 2
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "체육",
+      "name": "체육2",
+      "std_credits": 3,
+      "op_credits": 2,
+      "schedule": {
+        "1학년|공통|2학기": 2
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "체육",
+      "name": "스포츠 생활1",
+      "std_credits": 3,
+      "op_credits": 2,
+      "schedule": {
+        "2학년|세무회계|1학기": 2,
+        "2학년|관세무역|1학기": 2,
+        "2학년|세무행정|1학기": 2
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "체육",
+      "name": "스포츠 생활2",
+      "std_credits": 3,
+      "op_credits": 2,
+      "schedule": {
+        "2학년|세무회계|2학기": 2,
+        "2학년|관세무역|2학기": 2,
+        "2학년|세무행정|2학기": 2
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "예술",
+      "name": "음악",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "예술",
+      "name": "미술",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "기술·가정/정보/제2외국어/한문/교양",
+      "name": "컴퓨터 시스템 일반",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "2학년|세무회계|1학기": 4,
+        "2학년|관세무역|1학기": 4,
+        "2학년|세무행정|1학기": 4
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "기술·가정/정보/제2외국어/한문/교양",
+      "name": "디지털과 직업 생활",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "2학년|세무회계|2학기": 4,
+        "2학년|관세무역|2학기": 4,
+        "2학년|세무행정|2학기": 4
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "기술·가정/정보/제2외국어/한문/교양",
+      "name": "생애 설계와 자립",
+      "std_credits": 2,
+      "op_credits": 2,
+      "schedule": {
+        "3학년|세무회계|1학기": 2,
+        "3학년|관세무역|1학기": 2,
+        "3학년|세무행정|1학기": 2
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "성공적인 직업 생활",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "2학년|세무회계|1학기": 4,
+        "2학년|관세무역|1학기": 4,
+        "2학년|세무행정|1학기": 4
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "노동 인권과 산업 안전 보건",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "2학년|세무회계|2학기": 4,
+        "2학년|관세무역|2학기": 4,
+        "2학년|세무행정|2학기": 4
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "회계 원리",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "1학년|공통|1학기": 4
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "상업 경제",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|1학기": 3,
+        "2학년|관세무역|1학기": 3,
+        "2학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "세무 일반",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|2학기": 3,
+        "2학년|관세무역|2학기": 3,
+        "2학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "금융 일반",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|1학기": 3,
+        "2학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "직무 의사소통",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "3학년|세무회계|2학기": 3,
+        "3학년|관세무역|2학기": 3,
+        "3학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "직무 수학",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "3학년|세무회계|2학기": 3,
+        "3학년|관세무역|2학기": 3,
+        "3학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "직무 영어",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "3학년|세무회계|2학기": 3,
+        "3학년|관세무역|2학기": 3,
+        "3학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "비즈니스 커뮤니케이션",
+      "std_credits": 2,
+      "op_credits": 2,
+      "schedule": {
+        "3학년|세무회계|2학기": 2,
+        "3학년|관세무역|2학기": 2,
+        "3학년|세무행정|2학기": 2
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "무역 영어",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|관세무역|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "기업과 경영",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "3학년|세무회계|2학기": 4,
+        "3학년|세무행정|2학기": 4
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "고시외과목",
+      "name": "국제무역입문",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|관세무역|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "고시외과목",
+      "name": "중급 회계",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "3학년|세무회계|1학기": 4,
+        "3학년|관세무역|2학기": 4,
+        "3학년|세무행정|1학기": 4
+      }
+    },
+    {
+      "entry_year": 2025,
+      "area": "기타",
+      "group": "고시외과목",
+      "name": "관세 사무 일반",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "3학년|관세무역|1학기": 4
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "국어",
+      "name": "공통국어1",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "국어",
+      "name": "공통국어2",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "국어",
+      "name": "문학",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|1학기": 3,
+        "2학년|관세무역|1학기": 3,
+        "2학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "국어",
+      "name": "화법과 언어",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|2학기": 3,
+        "2학년|관세무역|2학기": 3,
+        "2학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "국어",
+      "name": "독서와 작문",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "3학년|세무회계|1학기": 3,
+        "3학년|관세무역|1학기": 3,
+        "3학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "수학",
+      "name": "공통수학1",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "수학",
+      "name": "공통수학2",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "수학",
+      "name": "대수",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|1학기": 3,
+        "2학년|관세무역|1학기": 3,
+        "2학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "수학",
+      "name": "미적분Ｉ",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|2학기": 3,
+        "2학년|관세무역|2학기": 3,
+        "2학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "수학",
+      "name": "확률과 통계",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "3학년|세무회계|1학기": 3,
+        "3학년|관세무역|1학기": 3,
+        "3학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "영어",
+      "name": "공통영어1",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "영어",
+      "name": "공통영어2",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "영어",
+      "name": "영어Ｉ",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|1학기": 3,
+        "2학년|관세무역|1학기": 3,
+        "2학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "영어",
+      "name": "영어Ⅱ",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|2학기": 3,
+        "2학년|관세무역|2학기": 3,
+        "2학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "영어",
+      "name": "영어 독해와 작문",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "3학년|세무회계|1학기": 3,
+        "3학년|관세무역|1학기": 3,
+        "3학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "한국사",
+      "name": "한국사1",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "한국사",
+      "name": "한국사2",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "사회(역사/도덕 포함)",
+      "name": "통합사회1",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "사회(역사/도덕 포함)",
+      "name": "통합사회2",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "과학",
+      "name": "통합과학1",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "과학",
+      "name": "통합과학2",
+      "std_credits": 4,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "체육",
+      "name": "스포츠 문화",
+      "std_credits": 2,
+      "op_credits": 1,
+      "schedule": {
+        "1학년|공통|1학기": 1
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "체육",
+      "name": "스포츠 과학",
+      "std_credits": 2,
+      "op_credits": 1,
+      "schedule": {
+        "1학년|공통|2학기": 1
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "체육",
+      "name": "체육1",
+      "std_credits": 3,
+      "op_credits": 2,
+      "schedule": {
+        "2학년|세무회계|1학기": 2,
+        "2학년|관세무역|1학기": 2,
+        "2학년|세무행정|1학기": 2
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "체육",
+      "name": "체육2",
+      "std_credits": 3,
+      "op_credits": 2,
+      "schedule": {
+        "2학년|세무회계|2학기": 2,
+        "2학년|관세무역|2학기": 2,
+        "2학년|세무행정|2학기": 2
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "체육",
+      "name": "스포츠 생활1",
+      "std_credits": 3,
+      "op_credits": 2,
+      "schedule": {
+        "3학년|세무회계|1학기": 2,
+        "3학년|관세무역|1학기": 2,
+        "3학년|세무행정|1학기": 2
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "체육",
+      "name": "스포츠 생활2",
+      "std_credits": 3,
+      "op_credits": 2,
+      "schedule": {
+        "3학년|세무회계|2학기": 2,
+        "3학년|관세무역|2학기": 2,
+        "3학년|세무행정|2학기": 2
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "예술",
+      "name": "음악",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "예술",
+      "name": "미술",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "1학년|공통|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "기술·가정/정보/제2외국어/한문/교양",
+      "name": "컴퓨터 시스템 일반",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "2학년|세무회계|1학기": 4,
+        "2학년|관세무역|1학기": 4,
+        "2학년|세무행정|1학기": 4
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "기술·가정/정보/제2외국어/한문/교양",
+      "name": "디지털과 직업 생활",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "2학년|세무회계|2학기": 4,
+        "2학년|관세무역|2학기": 4,
+        "2학년|세무행정|2학기": 4
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "기술·가정/정보/제2외국어/한문/교양",
+      "name": "생애 설계와 자립",
+      "std_credits": 2,
+      "op_credits": 2,
+      "schedule": {
+        "3학년|세무회계|1학기": 2,
+        "3학년|관세무역|1학기": 2,
+        "3학년|세무행정|1학기": 2
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "성공적인 직업 생활",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "2학년|세무회계|1학기": 4,
+        "2학년|관세무역|1학기": 4,
+        "2학년|세무행정|1학기": 4
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "노동 인권과 산업 안전 보건",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "2학년|세무회계|2학기": 4,
+        "2학년|관세무역|2학기": 4,
+        "2학년|세무행정|2학기": 4
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "회계 원리",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "1학년|공통|1학기": 4
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "상업 경제",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|1학기": 3,
+        "2학년|관세무역|1학기": 3,
+        "2학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "세무 일반",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|2학기": 3,
+        "2학년|관세무역|2학기": 3,
+        "2학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "금융 일반",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|세무회계|1학기": 3,
+        "2학년|세무행정|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "직무 의사소통",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "3학년|세무회계|2학기": 3,
+        "3학년|관세무역|2학기": 3,
+        "3학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "직무 수학",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "3학년|세무회계|2학기": 3,
+        "3학년|관세무역|2학기": 3,
+        "3학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "직무 영어",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "3학년|세무회계|2학기": 3,
+        "3학년|관세무역|2학기": 3,
+        "3학년|세무행정|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "비즈니스 커뮤니케이션",
+      "std_credits": 2,
+      "op_credits": 2,
+      "schedule": {
+        "3학년|세무회계|2학기": 2,
+        "3학년|관세무역|2학기": 2,
+        "3학년|세무행정|2학기": 2
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "무역 영어",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|관세무역|2학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "고시과목",
+      "name": "기업과 경영",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "3학년|세무회계|2학기": 4,
+        "3학년|세무행정|2학기": 4
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "고시외과목",
+      "name": "국제무역입문",
+      "std_credits": 3,
+      "op_credits": 3,
+      "schedule": {
+        "2학년|관세무역|1학기": 3
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "고시외과목",
+      "name": "중급 회계",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "3학년|세무회계|1학기": 4,
+        "3학년|관세무역|2학기": 4,
+        "3학년|세무행정|1학기": 4
+      }
+    },
+    {
+      "entry_year": 2026,
+      "area": "기타",
+      "group": "고시외과목",
+      "name": "관세 사무 일반",
+      "std_credits": 4,
+      "op_credits": 4,
+      "schedule": {
+        "3학년|관세무역|1학기": 4
+      }
+    }
+  ],
+  "teachers": {
+    "2025": [
+      {
+        "name": "이미진",
+        "dept": "국어과",
+        "school_year": 2025,
+        "total_credits": 12,
+        "notes": "사회 3.0",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "현수연",
+        "dept": "국어과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "과학 1.0 53-5=48",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "주경현",
+        "dept": "국어과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "음미체 4.0",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "김종선",
+        "dept": "국어과",
+        "school_year": 2025,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "오솔님",
+        "dept": "국어과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "상업 21.0",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "윤광희",
+        "dept": "수학과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "신동찬",
+        "dept": "수학과",
+        "school_year": 2025,
+        "total_credits": 15,
+        "notes": "파이썬",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "이유진",
+        "dept": "수학과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "이혜림",
+        "dept": "수학과",
+        "school_year": 2025,
+        "total_credits": 17,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "최영환",
+        "dept": "영어과",
+        "school_year": 2025,
+        "total_credits": 12,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "권석호",
+        "dept": "영어과",
+        "school_year": 2025,
+        "total_credits": 9,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "안만식",
+        "dept": "영어과",
+        "school_year": 2025,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "조상진",
+        "dept": "영어과",
+        "school_year": 2025,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "송지은",
+        "dept": "영어과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "김혜경",
+        "dept": "영어과",
+        "school_year": 2025,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "김경남",
+        "dept": "영어과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "빅토리아",
+        "dept": "원어민",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "엄조청",
+        "dept": "원어민",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "박유선",
+        "dept": "원어민",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "송기정",
+        "dept": "사회과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "한국사1/한국사2"
+      },
+      {
+        "name": "박미진",
+        "dept": "사회과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "한국사1/한국사2"
+      },
+      {
+        "name": "손형호",
+        "dept": "사회과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "한국사1/한국사2"
+      },
+      {
+        "name": "차주룡",
+        "dept": "과학과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "통합과학1/통합과학2"
+      },
+      {
+        "name": "강사",
+        "dept": "과학과",
+        "school_year": 2025,
+        "total_credits": 8,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "통합과학1/통합과학2"
+      },
+      {
+        "name": "박창연",
+        "dept": "예체능과",
+        "school_year": 2025,
+        "total_credits": 14,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "체육1/체육2"
+      },
+      {
+        "name": "조주현",
+        "dept": "예체능과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "체육1/체육2"
+      },
+      {
+        "name": "이용구",
+        "dept": "예체능과",
+        "school_year": 2025,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "체육1/체육2"
+      },
+      {
+        "name": "류제천",
+        "dept": "예체능과",
+        "school_year": 2025,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "2학년 진로"
+      },
+      {
+        "name": "김희성",
+        "dept": "예체능과",
+        "school_year": 2025,
+        "total_credits": 8,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "2학년 진로"
+      },
+      {
+        "name": "배선호",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "장명식",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이정규",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "박삼석",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 12,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이유정",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 12,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "김대유",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "조은혜",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "배윤호",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이소민",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "유민지",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "최수정",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 17,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "정원선",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "자와연",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이호정",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이소리",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이재영",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이수민",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "김도연",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "유준상",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "박수연",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 16,
+        "notes": "사관",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "권혁무",
+        "dept": "상업과",
+        "school_year": 2025,
+        "total_credits": 24,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      }
+    ],
+    "2026": [
+      {
+        "name": "이미진",
+        "dept": "국어과",
+        "school_year": 2026,
+        "total_credits": 12,
+        "notes": "사회 3",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "현수연",
+        "dept": "국어과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "과학 52-5=47",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "주경현",
+        "dept": "국어과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "음미체 4",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "김종선",
+        "dept": "국어과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "오솔님",
+        "dept": "국어과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "상업 22",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "윤광희",
+        "dept": "수학과",
+        "school_year": 2026,
+        "total_credits": 15,
+        "notes": "* 특이사항: 현수연선생님 체육/영어과 3학년 영어",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "신동찬",
+        "dept": "수학과",
+        "school_year": 2026,
+        "total_credits": 15,
+        "notes": "조은 선생님 진로 3학년",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "이유진",
+        "dept": "수학과",
+        "school_year": 2026,
+        "total_credits": 12,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "이혜림",
+        "dept": "수학과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "강사",
+        "dept": "수학과",
+        "school_year": 2026,
+        "total_credits": 6,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "최영환",
+        "dept": "영어과",
+        "school_year": 2026,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "권석호",
+        "dept": "영어과",
+        "school_year": 2026,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "안만식",
+        "dept": "영어과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "조상진",
+        "dept": "영어과",
+        "school_year": 2026,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "고현영",
+        "dept": "영어과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "김혜경",
+        "dept": "영어과",
+        "school_year": 2026,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "김경남",
+        "dept": "영어과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "원어민",
+        "dept": "원어민",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "원어민",
+        "dept": "원어민",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "송기정",
+        "dept": "사회과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "한국사1/한국사2"
+      },
+      {
+        "name": "박미진",
+        "dept": "사회과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "한국사1/한국사2"
+      },
+      {
+        "name": "손형호",
+        "dept": "사회과",
+        "school_year": 2026,
+        "total_credits": 12,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "한국사1/한국사2"
+      },
+      {
+        "name": "강사",
+        "dept": "사회과",
+        "school_year": 2026,
+        "total_credits": 4,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "한국사1/한국사2"
+      },
+      {
+        "name": "기간제",
+        "dept": "과학과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "통합과학1/통합과학2"
+      },
+      {
+        "name": "허승범",
+        "dept": "과학과",
+        "school_year": 2026,
+        "total_credits": 8,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "통합과학1/통합과학2"
+      },
+      {
+        "name": "박창연",
+        "dept": "예체능과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "스포츠문화/스포츠과학"
+      },
+      {
+        "name": "조주현",
+        "dept": "예체능과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "스포츠문화/스포츠과학"
+      },
+      {
+        "name": "이용구",
+        "dept": "예체능과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "스포츠문화/스포츠과학"
+      },
+      {
+        "name": "류제천",
+        "dept": "예체능과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "3학년 진로"
+      },
+      {
+        "name": "배선호",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "장명식",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이정규",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 13,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "박삼석",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이유정",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 13,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "김대유",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "조은혜",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 13,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "배윤호",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이소민",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "유민지",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "최수정",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "정원선",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "장화연",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이호정",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이소리",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이수민",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "기간제",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "기간제",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "김희성",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "기간제",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "기간제",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "박수연",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "조은",
+        "dept": "상업과",
+        "school_year": 2026,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      }
+    ],
+    "2027": [
+      {
+        "name": "이미진",
+        "dept": "국어과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "사회 3.0",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "현수연",
+        "dept": "국어과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "과학 1.0 52-5=47",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "주경현",
+        "dept": "국어과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "음미체 4.0",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "기간제1",
+        "dept": "국어과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "기간제2",
+        "dept": "국어과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "상업 21.0",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "신동찬",
+        "dept": "수학과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "이유진",
+        "dept": "수학과",
+        "school_year": 2027,
+        "total_credits": 12,
+        "notes": "파이썬: 김경남 + 전산과",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "이혜림",
+        "dept": "수학과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "국어과 8시간-> 과학지원",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "기간제1",
+        "dept": "수학과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "기간제2",
+        "dept": "수학과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "최영환",
+        "dept": "영어과",
+        "school_year": 2027,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "권석호",
+        "dept": "영어과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "안만식",
+        "dept": "영어과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "조상진",
+        "dept": "영어과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "고현영",
+        "dept": "영어과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "김혜경",
+        "dept": "영어과",
+        "school_year": 2027,
+        "total_credits": 15,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "김경남",
+        "dept": "영어과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "원어민",
+        "dept": "원어민",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "원어민",
+        "dept": "원어민",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "박미진",
+        "dept": "사회과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "한국사1/한국사2"
+      },
+      {
+        "name": "손형호",
+        "dept": "사회과",
+        "school_year": 2027,
+        "total_credits": 12,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "한국사1/한국사2"
+      },
+      {
+        "name": "기간제",
+        "dept": "사회과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "한국사1/한국사2"
+      },
+      {
+        "name": "시간강사",
+        "dept": "사회과",
+        "school_year": 2027,
+        "total_credits": 4,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "한국사1/한국사2"
+      },
+      {
+        "name": "정교사",
+        "dept": "과학과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "통합과학1/통합과학2"
+      },
+      {
+        "name": "순회교사",
+        "dept": "과학과",
+        "school_year": 2027,
+        "total_credits": 8,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "통합과학1/통합과학2"
+      },
+      {
+        "name": "박창연",
+        "dept": "예체능과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "스포츠문화/스포츠과학"
+      },
+      {
+        "name": "조주현",
+        "dept": "예체능과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "스포츠문화/스포츠과학"
+      },
+      {
+        "name": "이용구",
+        "dept": "예체능과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "스포츠문화/스포츠과학"
+      },
+      {
+        "name": "김희성",
+        "dept": "예체능과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "3학년 자율"
+      },
+      {
+        "name": "장명식",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이정규",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 12,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "박삼석",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이유정",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 12,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "김대유",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "조은혜",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 12,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "배윤호",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이소민",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "유민지",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "최수정",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "정원선",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "장화연",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 17,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이호정",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 17,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이소리",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 17,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "김현주",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 17,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이아영",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "정교사",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "박수연",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이영의",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이정호",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "정교사",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "조은",
+        "dept": "상업과",
+        "school_year": 2027,
+        "total_credits": 12,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      }
+    ],
+    "2028": [
+      {
+        "name": "이미진",
+        "dept": "국어과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "사회 3.0",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "현수연",
+        "dept": "국어과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "과학 1.0 52-5=47",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "주경현",
+        "dept": "국어과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "음미체 4.0",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "김종선",
+        "dept": "국어과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "오솔님",
+        "dept": "국어과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "상업 21.0",
+        "is_temp": false,
+        "subject_group": "공통국어1/공통국어2"
+      },
+      {
+        "name": "신동찬",
+        "dept": "수학과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "이유진",
+        "dept": "수학과",
+        "school_year": 2028,
+        "total_credits": 12,
+        "notes": "파이썬: 김경남 + 전산과",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "이혜림",
+        "dept": "수학과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "국어과 8시간-> 체육지원",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "기간제1",
+        "dept": "수학과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "기간제2",
+        "dept": "수학과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통수학1/공통수학2"
+      },
+      {
+        "name": "권석호",
+        "dept": "영어과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "안만식",
+        "dept": "영어과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "조상진",
+        "dept": "영어과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "고현영",
+        "dept": "영어과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "김혜경",
+        "dept": "영어과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "김경남",
+        "dept": "영어과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "원어민",
+        "dept": "원어민",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "원어민",
+        "dept": "원어민",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "공통영어1/공통영어2"
+      },
+      {
+        "name": "박미진",
+        "dept": "사회과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "한국사1/한국사2"
+      },
+      {
+        "name": "손형호",
+        "dept": "사회과",
+        "school_year": 2028,
+        "total_credits": 12,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "한국사1/한국사2"
+      },
+      {
+        "name": "기간제",
+        "dept": "사회과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "한국사1/한국사2"
+      },
+      {
+        "name": "시간강사",
+        "dept": "사회과",
+        "school_year": 2028,
+        "total_credits": 4,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "한국사1/한국사2"
+      },
+      {
+        "name": "정교사",
+        "dept": "과학과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "통합과학1/통합과학2"
+      },
+      {
+        "name": "순회교사",
+        "dept": "과학과",
+        "school_year": 2028,
+        "total_credits": 8,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "통합과학1/통합과학2"
+      },
+      {
+        "name": "박창연",
+        "dept": "예체능과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "스포츠문화/스포츠과학"
+      },
+      {
+        "name": "조주현",
+        "dept": "예체능과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "스포츠문화/스포츠과학"
+      },
+      {
+        "name": "이용구",
+        "dept": "예체능과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "스포츠문화/스포츠과학"
+      },
+      {
+        "name": "김희성",
+        "dept": "예체능과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "3학년 자율"
+      },
+      {
+        "name": "장명식",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이정규",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "박삼석",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이유정",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 12,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "김대유",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "조은혜",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 12,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "배윤호",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이소민",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "유민지",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "정교사",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "최수정",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "정원선",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "장화연",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이소리",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "김현주",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이아영",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "박수연",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이영의",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "이정호",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "정보",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "정교사",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 16,
+        "notes": "",
+        "is_temp": true,
+        "subject_group": "회계원리/회정"
+      },
+      {
+        "name": "조은",
+        "dept": "상업과",
+        "school_year": 2028,
+        "total_credits": 12,
+        "notes": "",
+        "is_temp": false,
+        "subject_group": "회계원리/회정"
+      }
+    ]
+  },
+  "dept_groups": {
+    "2025": [
+      {
+        "dept": "국어과",
+        "subject_names": [
+          "공통국어1/공통국어2",
+          "문학/독서",
+          "화법과 작문",
+          "화작2",
+          "진로2"
+        ],
+        "total_hours": 75,
+        "teachers": [
+          "이미진",
+          "현수연",
+          "주경현",
+          "김종선",
+          "오솔님"
+        ]
+      },
+      {
+        "dept": "수학과",
+        "subject_names": [
+          "공통수학1/공통수학2",
+          "수학I/수학II",
+          "확률과 통계"
+        ],
+        "total_hours": 64,
+        "teachers": [
+          "윤광희",
+          "신동찬",
+          "이유진",
+          "이혜림"
+        ]
+      },
+      {
+        "dept": "영어과",
+        "subject_names": [
+          "공통영어1/공통영어2",
+          "영어I/토익연습일반",
+          "영어II/토익연습실무",
+          "비즈니스영어",
+          "2학년 진로",
+          "커뮤니케이션"
+        ],
+        "total_hours": 98,
+        "teachers": [
+          "최영환",
+          "권석호",
+          "안만식",
+          "조상진",
+          "송지은",
+          "김혜경",
+          "김경남",
+          "빅토리아",
+          "엄조청",
+          "박유선"
+        ]
+      },
+      {
+        "dept": "사회과",
+        "subject_names": [
+          "한국사1/한국사2",
+          "통합사회1/통합사회2"
+        ],
+        "total_hours": 48,
+        "teachers": [
+          "송기정",
+          "박미진",
+          "손형호"
+        ]
+      },
+      {
+        "dept": "과학과",
+        "subject_names": [
+          "통합과학1/통합과학2",
+          "커뮤니케이션"
+        ],
+        "total_hours": 24,
+        "teachers": [
+          "차주룡",
+          "강사"
+        ]
+      },
+      {
+        "dept": "예체능과",
+        "subject_names": [
+          "체육1/체육2",
+          "체육",
+          "스포츠생활"
+        ],
+        "total_hours": 30,
+        "teachers": [
+          "박창연",
+          "조주현",
+          "이용구"
+        ]
+      },
+      {
+        "dept": "예체능과",
+        "subject_names": [
+          "2학년 진로"
+        ],
+        "total_hours": 0,
+        "teachers": [
+          "류제천"
+        ]
+      },
+      {
+        "dept": "예체능과",
+        "subject_names": [
+          "2학년 진로",
+          "체육"
+        ],
+        "total_hours": 0,
+        "teachers": [
+          "김희성"
+        ]
+      },
+      {
+        "dept": "상업과",
+        "subject_names": [
+          "회계원리/회정",
+          "성공적인 직업생활",
+          "상업경제",
+          "세무일반",
+          "회계정보처리시스템/행정서비스 일반",
+          "기업과경영/국제상무/비서사무일반",
+          "중급회계/관세사무일반",
+          "회계 실무",
+          "세무 실무",
+          "예산자금/수출입관리/인사",
+          "금융일반/국제무역입문/빅데이터엑셀",
+          "기업자원/원산지/파이썬",
+          "사무관리/빅데이터",
+          "사무행정"
+        ],
+        "total_hours": 319,
+        "teachers": [
+          "배선호",
+          "장명식",
+          "이정규",
+          "박삼석",
+          "이유정",
+          "김대유",
+          "조은혜",
+          "배윤호",
+          "이소민",
+          "유민지",
+          "최수정",
+          "정원선",
+          "자와연",
+          "이호정",
+          "이소리",
+          "이재영",
+          "이수민",
+          "김도연",
+          "유준상",
+          "박수연",
+          "권혁무"
+        ]
+      }
+    ],
+    "2026": [
+      {
+        "dept": "국어과",
+        "subject_names": [
+          "공통국어1/공통국어2",
+          "문학/화법과 언어",
+          "화법과작문",
+          "화법과 작문2",
+          "진로1"
+        ],
+        "total_hours": 76,
+        "teachers": [
+          "이미진",
+          "현수연",
+          "주경현",
+          "김종선",
+          "오솔님"
+        ]
+      },
+      {
+        "dept": "수학과",
+        "subject_names": [
+          "공통수학1/공통수학2",
+          "대수/미적분",
+          "확률과 통계"
+        ],
+        "total_hours": 64,
+        "teachers": [
+          "윤광희",
+          "신동찬",
+          "이유진",
+          "이혜림",
+          "강사"
+        ]
+      },
+      {
+        "dept": "영어과",
+        "subject_names": [
+          "공통영어1/공통영어2",
+          "영어I/영어II",
+          "영어II/토익연습실무",
+          "상과지원",
+          "2학년 영어",
+          "커뮤니케이션"
+        ],
+        "total_hours": 108,
+        "teachers": [
+          "최영환",
+          "권석호",
+          "안만식",
+          "조상진",
+          "고현영",
+          "김혜경",
+          "김경남",
+          "원어민",
+          "원어민"
+        ]
+      },
+      {
+        "dept": "사회과",
+        "subject_names": [
+          "한국사1/한국사2",
+          "통합사회1/통합사회2"
+        ],
+        "total_hours": 48,
+        "teachers": [
+          "송기정",
+          "박미진",
+          "손형호",
+          "강사"
+        ]
+      },
+      {
+        "dept": "과학과",
+        "subject_names": [
+          "통합과학1/통합과학2"
+        ],
+        "total_hours": 24,
+        "teachers": [
+          "기간제",
+          "허승범"
+        ]
+      },
+      {
+        "dept": "예체능과",
+        "subject_names": [
+          "스포츠문화/스포츠과학",
+          "체육1/체육2",
+          "스포츠생활"
+        ],
+        "total_hours": 32,
+        "teachers": [
+          "박창연",
+          "조주현",
+          "이용구"
+        ]
+      },
+      {
+        "dept": "예체능과",
+        "subject_names": [
+          "3학년 진로"
+        ],
+        "total_hours": 0,
+        "teachers": [
+          "류제천"
+        ]
+      },
+      {
+        "dept": "예체능과",
+        "subject_names": [
+          "3학년 진로"
+        ],
+        "total_hours": 0,
+        "teachers": []
+      },
+      {
+        "dept": "상업과",
+        "subject_names": [
+          "회계원리/회정",
+          "성직/노동인권",
+          "상경/세일",
+          "회계실무",
+          "금융일반/ERP",
+          "기업과경영/국제상무/비서사무일반",
+          "중급회계/관세사무일반",
+          "세무 실무",
+          "예산자금/수출입관리/인사",
+          "기업자원/원산지",
+          "사무관리/빅데이터",
+          "컴일/디지털",
+          "사무행정"
+        ],
+        "total_hours": 340,
+        "teachers": [
+          "배선호",
+          "장명식",
+          "이정규",
+          "박삼석",
+          "이유정",
+          "김대유",
+          "조은혜",
+          "배윤호",
+          "이소민",
+          "유민지",
+          "최수정",
+          "정원선",
+          "장화연",
+          "이호정",
+          "이소리",
+          "이수민",
+          "기간제",
+          "기간제",
+          "김희성",
+          "기간제",
+          "기간제",
+          "박수연",
+          "조은"
+        ]
+      }
+    ],
+    "2027": [
+      {
+        "dept": "국어과",
+        "subject_names": [
+          "공통국어1/공통국어2",
+          "문학/화법과 언어",
+          "독서와작문/직무의사소통"
+        ],
+        "total_hours": 72,
+        "teachers": [
+          "이미진",
+          "현수연",
+          "주경현",
+          "기간제1",
+          "기간제2"
+        ]
+      },
+      {
+        "dept": "수학과",
+        "subject_names": [
+          "공통수학1/공통수학2",
+          "대수/미적분I",
+          "확률과 통계/직무수학"
+        ],
+        "total_hours": 76,
+        "teachers": [
+          "신동찬",
+          "이유진",
+          "이혜림",
+          "기간제1",
+          "기간제2"
+        ]
+      },
+      {
+        "dept": "영어과",
+        "subject_names": [
+          "공통영어1/공통영어2",
+          "영어I/영어II",
+          "영어독해와작문/직무영어",
+          "자율 영어2",
+          "프로그래밍/파이선",
+          "커뮤니케이션/생애설계"
+        ],
+        "total_hours": 112,
+        "teachers": [
+          "최영환",
+          "권석호",
+          "안만식",
+          "조상진",
+          "고현영",
+          "김혜경",
+          "김경남",
+          "원어민",
+          "원어민"
+        ]
+      },
+      {
+        "dept": "사회과",
+        "subject_names": [
+          "한국사1/한국사2",
+          "통합사회1/통합사회2"
+        ],
+        "total_hours": 48,
+        "teachers": [
+          "박미진",
+          "손형호",
+          "기간제",
+          "시간강사"
+        ]
+      },
+      {
+        "dept": "과학과",
+        "subject_names": [
+          "통합과학1/통합과학2"
+        ],
+        "total_hours": 24,
+        "teachers": [
+          "정교사",
+          "순회교사"
+        ]
+      },
+      {
+        "dept": "예체능과",
+        "subject_names": [
+          "스포츠문화/스포츠과학",
+          "체육1/체육2",
+          "창체_체육"
+        ],
+        "total_hours": 32,
+        "teachers": [
+          "박창연",
+          "조주현",
+          "이용구"
+        ]
+      },
+      {
+        "dept": "예체능과",
+        "subject_names": [
+          "3학년 자율"
+        ],
+        "total_hours": 0,
+        "teachers": [
+          "김희성"
+        ]
+      },
+      {
+        "dept": "예체능과",
+        "subject_names": [
+          "3학년 자율"
+        ],
+        "total_hours": 0,
+        "teachers": []
+      },
+      {
+        "dept": "상업과",
+        "subject_names": [
+          "회계원리/회정",
+          "성직/노동",
+          "상경/세일",
+          "회계실무",
+          "금융일반/ERP국제무역입문/무역영어",
+          "중급회계/기업과경영관세사무일반/중급회계",
+          "사무행정",
+          "세무 실무",
+          "선택교과",
+          "사무관리/빅데이터",
+          "컴일/디지털",
+          "프로그래밍/파이선"
+        ],
+        "total_hours": 328,
+        "teachers": [
+          "장명식",
+          "이정규",
+          "박삼석",
+          "이유정",
+          "김대유",
+          "조은혜",
+          "배윤호",
+          "이소민",
+          "유민지",
+          "최수정",
+          "정원선",
+          "장화연",
+          "이호정",
+          "이소리",
+          "김현주",
+          "이아영",
+          "정교사",
+          "박수연",
+          "이영의",
+          "이정호",
+          "정교사",
+          "조은"
+        ]
+      }
+    ],
+    "2028": [
+      {
+        "dept": "국어과",
+        "subject_names": [
+          "공통국어1/공통국어2",
+          "문학/화법과 언어",
+          "독서와작문/직무의사소통",
+          "체육지원"
+        ],
+        "total_hours": 80,
+        "teachers": [
+          "이미진",
+          "현수연",
+          "주경현",
+          "김종선",
+          "오솔님"
+        ]
+      },
+      {
+        "dept": "수학과",
+        "subject_names": [
+          "공통수학1/공통수학2",
+          "대수/미적분I",
+          "확률과 통계/직무수학"
+        ],
+        "total_hours": 76,
+        "teachers": [
+          "신동찬",
+          "이유진",
+          "이혜림",
+          "기간제1",
+          "기간제2"
+        ]
+      },
+      {
+        "dept": "영어과",
+        "subject_names": [
+          "공통영어1/공통영어2",
+          "영어I/영어II",
+          "영어독해와작문/직무영어",
+          "자율 영어2",
+          "커뮤니케이션/생애설계"
+        ],
+        "total_hours": 96,
+        "teachers": [
+          "권석호",
+          "안만식",
+          "조상진",
+          "고현영",
+          "김혜경",
+          "김경남",
+          "원어민",
+          "원어민"
+        ]
+      },
+      {
+        "dept": "사회과",
+        "subject_names": [
+          "한국사1/한국사2",
+          "통합사회1/통합사회2"
+        ],
+        "total_hours": 48,
+        "teachers": [
+          "박미진",
+          "손형호",
+          "기간제",
+          "시간강사"
+        ]
+      },
+      {
+        "dept": "과학과",
+        "subject_names": [
+          "통합과학1/통합과학2"
+        ],
+        "total_hours": 24,
+        "teachers": [
+          "정교사",
+          "순회교사"
+        ]
+      },
+      {
+        "dept": "예체능과",
+        "subject_names": [
+          "스포츠문화/스포츠과학",
+          "체육1/체육2",
+          "스포츠생활1/2"
+        ],
+        "total_hours": 40,
+        "teachers": [
+          "박창연",
+          "조주현",
+          "이용구"
+        ]
+      },
+      {
+        "dept": "예체능과",
+        "subject_names": [
+          "3학년 자율"
+        ],
+        "total_hours": 0,
+        "teachers": [
+          "김희성"
+        ]
+      },
+      {
+        "dept": "예체능과",
+        "subject_names": [
+          "3학년 자율"
+        ],
+        "total_hours": 0,
+        "teachers": []
+      },
+      {
+        "dept": "상업과",
+        "subject_names": [
+          "회계원리/회정",
+          "성직/노동",
+          "상경/세일",
+          "회계실무",
+          "금융일반/ERP국제무역입문/무역영어",
+          "중급회계/기업과경영관세사무일반/중급회계",
+          "사무행정",
+          "세무 실무",
+          "선택교과",
+          "사무관리/빅데이터",
+          "컴일/디지털",
+          "프로그래밍/파이선"
+        ],
+        "total_hours": 328,
+        "teachers": [
+          "장명식",
+          "이정규",
+          "박삼석",
+          "이유정",
+          "김대유",
+          "조은혜",
+          "배윤호",
+          "이소민",
+          "유민지",
+          "정교사",
+          "최수정",
+          "정원선",
+          "장화연",
+          "이소리",
+          "김현주",
+          "이아영",
+          "박수연",
+          "이영의",
+          "이정호",
+          "정보",
+          "정교사",
+          "조은"
+        ]
+      }
+    ]
+  },
+  "yearly_view": {
+    "2025": [
+      {
+        "name": "문학",
+        "group": "국어",
+        "area": "기초",
+        "grade": "2학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "관세무역_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "독서",
+        "group": "국어",
+        "area": "기초",
+        "grade": "2학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_2학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "수학Ⅰ",
+        "group": "수학",
+        "area": "기초",
+        "grade": "2학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "관세무역_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "수학Ⅱ",
+        "group": "수학",
+        "area": "기초",
+        "grade": "2학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_2학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "영어Ⅰ",
+        "group": "영어",
+        "area": "기초",
+        "grade": "2학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "관세무역_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "체육",
+        "group": "체육",
+        "area": "체육·예술",
+        "grade": "2학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_1학기": 1,
+          "세무회계_2학기": 1,
+          "관세무역_1학기": 1,
+          "관세무역_2학기": 1,
+          "세무행정_1학기": 1,
+          "세무행정_2학기": 1
+        },
+        "weekly_credits": 6
+      },
+      {
+        "name": "미술 창작",
+        "group": "예술",
+        "area": "체육·예술",
+        "grade": "2학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_1학기": 1,
+          "세무회계_2학기": 1,
+          "관세무역_1학기": 1,
+          "관세무역_2학기": 1,
+          "세무행정_1학기": 1,
+          "세무행정_2학기": 1
+        },
+        "weekly_credits": 6
+      },
+      {
+        "name": "관광 일본어",
+        "group": "제2외국어",
+        "area": "생활·교양",
+        "grade": "2학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_1학기": 2,
+          "세무회계_2학기": 2,
+          "관세무역_1학기": 2,
+          "관세무역_2학기": 2,
+          "세무행정_1학기": 2,
+          "세무행정_2학기": 2
+        },
+        "weekly_credits": 12
+      },
+      {
+        "name": "성공적인 직업생활",
+        "group": "고시과목",
+        "area": "전공필수",
+        "grade": "2학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_1학기": 2,
+          "세무회계_2학기": 2,
+          "관세무역_1학기": 2,
+          "관세무역_2학기": 2,
+          "세무행정_1학기": 2,
+          "세무행정_2학기": 2
+        },
+        "weekly_credits": 12
+      },
+      {
+        "name": "상업 경제",
+        "group": "고시과목",
+        "area": "전공필수",
+        "grade": "2학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "세무회계_2학기": 3,
+          "관세무역_1학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_1학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 18
+      },
+      {
+        "name": "비즈니스 영어",
+        "group": "고시과목",
+        "area": "전공필수",
+        "grade": "2학년",
+        "entry_year": 2024,
+        "tracks": {
+          "관세무역_1학기": 3,
+          "관세무역_2학기": 3
+        },
+        "weekly_credits": 6
+      },
+      {
+        "name": "토익연습일반",
+        "group": "고시외과목",
+        "area": "전공필수",
+        "grade": "2학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_2학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "행정서비스 일반",
+        "group": "고시외과목",
+        "area": "전공필수",
+        "grade": "2학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무행정_1학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 6
+      },
+      {
+        "name": "공통국어1",
+        "group": "국어",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_1학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "공통국어2",
+        "group": "국어",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "공통수학1",
+        "group": "수학",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_1학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "공통수학2",
+        "group": "수학",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "공통영어1",
+        "group": "영어",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_1학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "공통영어2",
+        "group": "영어",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "한국사1",
+        "group": "한국사",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_1학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "한국사2",
+        "group": "한국사",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "통합사회1",
+        "group": "사회(역사/도덕 포함)",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_1학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "통합사회2",
+        "group": "사회(역사/도덕 포함)",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "통합과학1",
+        "group": "과학",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_1학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "통합과학2",
+        "group": "과학",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "체육1",
+        "group": "체육",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_1학기": 2
+        },
+        "weekly_credits": 2
+      },
+      {
+        "name": "체육2",
+        "group": "체육",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_2학기": 2
+        },
+        "weekly_credits": 2
+      },
+      {
+        "name": "음악",
+        "group": "예술",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_1학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "미술",
+        "group": "예술",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "회계 원리",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2025,
+        "tracks": {
+          "공통_1학기": 4
+        },
+        "weekly_credits": 4
+      }
+    ],
+    "2026": [
+      {
+        "name": "화법과 작문",
+        "group": "국어",
+        "area": "기초",
+        "grade": "3학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_1학기": 2,
+          "세무회계_2학기": 2,
+          "관세무역_1학기": 2,
+          "관세무역_2학기": 2,
+          "세무행정_1학기": 2,
+          "세무행정_2학기": 2
+        },
+        "weekly_credits": 12
+      },
+      {
+        "name": "확률과 통계",
+        "group": "수학",
+        "area": "기초",
+        "grade": "3학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_1학기": 2,
+          "세무회계_2학기": 2,
+          "관세무역_1학기": 2,
+          "관세무역_2학기": 2
+        },
+        "weekly_credits": 8
+      },
+      {
+        "name": "영어Ⅱ",
+        "group": "영어",
+        "area": "기초",
+        "grade": "3학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "관세무역_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "스포츠 생활",
+        "group": "체육",
+        "area": "체육·예술",
+        "grade": "3학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_1학기": 1,
+          "세무회계_2학기": 1,
+          "관세무역_1학기": 1,
+          "관세무역_2학기": 1,
+          "세무행정_1학기": 1,
+          "세무행정_2학기": 1
+        },
+        "weekly_credits": 6
+      },
+      {
+        "name": "커뮤니케이션",
+        "group": "고시과목",
+        "area": "전공필수",
+        "grade": "3학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_1학기": 2,
+          "세무회계_2학기": 2,
+          "관세무역_1학기": 2,
+          "관세무역_2학기": 2,
+          "세무행정_1학기": 2,
+          "세무행정_2학기": 2
+        },
+        "weekly_credits": 12
+      },
+      {
+        "name": "기업과 경영",
+        "group": "고시과목",
+        "area": "전공필수",
+        "grade": "3학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_1학기": 4,
+          "세무회계_2학기": 4
+        },
+        "weekly_credits": 8
+      },
+      {
+        "name": "국제 상무",
+        "group": "고시과목",
+        "area": "전공필수",
+        "grade": "3학년",
+        "entry_year": 2024,
+        "tracks": {
+          "관세무역_1학기": 4,
+          "관세무역_2학기": 4
+        },
+        "weekly_credits": 8
+      },
+      {
+        "name": "토익연습실무",
+        "group": "고시외과목",
+        "area": "전공필수",
+        "grade": "3학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_2학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "중급 회계",
+        "group": "고시외과목",
+        "area": "전공필수",
+        "grade": "3학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무회계_1학기": 4,
+          "세무회계_2학기": 4,
+          "세무행정_1학기": 4,
+          "세무행정_2학기": 4
+        },
+        "weekly_credits": 16
+      },
+      {
+        "name": "관세 사무 일반",
+        "group": "고시외과목",
+        "area": "전공필수",
+        "grade": "3학년",
+        "entry_year": 2024,
+        "tracks": {
+          "관세무역_1학기": 4,
+          "관세무역_2학기": 4
+        },
+        "weekly_credits": 8
+      },
+      {
+        "name": "비서사무일반",
+        "group": "고시외과목",
+        "area": "전공필수",
+        "grade": "3학년",
+        "entry_year": 2024,
+        "tracks": {
+          "세무행정_1학기": 4,
+          "세무행정_2학기": 4
+        },
+        "weekly_credits": 8
+      },
+      {
+        "name": "문학",
+        "group": "국어",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "관세무역_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "화법과 언어",
+        "group": "국어",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_2학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "대수",
+        "group": "수학",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "관세무역_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "미적분Ｉ",
+        "group": "수학",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_2학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "영어Ｉ",
+        "group": "영어",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "관세무역_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "영어Ⅱ",
+        "group": "영어",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_2학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "스포츠 생활1",
+        "group": "체육",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_1학기": 2,
+          "관세무역_1학기": 2,
+          "세무행정_1학기": 2
+        },
+        "weekly_credits": 6
+      },
+      {
+        "name": "스포츠 생활2",
+        "group": "체육",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_2학기": 2,
+          "관세무역_2학기": 2,
+          "세무행정_2학기": 2
+        },
+        "weekly_credits": 6
+      },
+      {
+        "name": "컴퓨터 시스템 일반",
+        "group": "기술·가정/정보/제2외국어/한문/교양",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_1학기": 4,
+          "관세무역_1학기": 4,
+          "세무행정_1학기": 4
+        },
+        "weekly_credits": 12
+      },
+      {
+        "name": "디지털과 직업 생활",
+        "group": "기술·가정/정보/제2외국어/한문/교양",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_2학기": 4,
+          "관세무역_2학기": 4,
+          "세무행정_2학기": 4
+        },
+        "weekly_credits": 12
+      },
+      {
+        "name": "성공적인 직업 생활",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_1학기": 4,
+          "관세무역_1학기": 4,
+          "세무행정_1학기": 4
+        },
+        "weekly_credits": 12
+      },
+      {
+        "name": "노동 인권과 산업 안전 보건",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_2학기": 4,
+          "관세무역_2학기": 4,
+          "세무행정_2학기": 4
+        },
+        "weekly_credits": 12
+      },
+      {
+        "name": "상업 경제",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "관세무역_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "세무 일반",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_2학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "금융 일반",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 6
+      },
+      {
+        "name": "무역 영어",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "관세무역_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "국제무역입문",
+        "group": "고시외과목",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2025,
+        "tracks": {
+          "관세무역_1학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "공통국어1",
+        "group": "국어",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_1학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "공통국어2",
+        "group": "국어",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "공통수학1",
+        "group": "수학",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_1학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "공통수학2",
+        "group": "수학",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "공통영어1",
+        "group": "영어",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_1학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "공통영어2",
+        "group": "영어",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "한국사1",
+        "group": "한국사",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_1학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "한국사2",
+        "group": "한국사",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "통합사회1",
+        "group": "사회(역사/도덕 포함)",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_1학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "통합사회2",
+        "group": "사회(역사/도덕 포함)",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "통합과학1",
+        "group": "과학",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_1학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "통합과학2",
+        "group": "과학",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "스포츠 문화",
+        "group": "체육",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_1학기": 1
+        },
+        "weekly_credits": 1
+      },
+      {
+        "name": "스포츠 과학",
+        "group": "체육",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_2학기": 1
+        },
+        "weekly_credits": 1
+      },
+      {
+        "name": "음악",
+        "group": "예술",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_1학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "미술",
+        "group": "예술",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "회계 원리",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "1학년",
+        "entry_year": 2026,
+        "tracks": {
+          "공통_1학기": 4
+        },
+        "weekly_credits": 4
+      }
+    ],
+    "2027": [
+      {
+        "name": "독서와 작문",
+        "group": "국어",
+        "area": "기타",
+        "grade": "3학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "관세무역_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "확률과 통계",
+        "group": "수학",
+        "area": "기타",
+        "grade": "3학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "관세무역_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "영어 독해와 작문",
+        "group": "영어",
+        "area": "기타",
+        "grade": "3학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "관세무역_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "생애 설계와 자립",
+        "group": "기술·가정/정보/제2외국어/한문/교양",
+        "area": "기타",
+        "grade": "3학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_1학기": 2,
+          "관세무역_1학기": 2,
+          "세무행정_1학기": 2
+        },
+        "weekly_credits": 6
+      },
+      {
+        "name": "직무 의사소통",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "3학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_2학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "직무 수학",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "3학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_2학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "직무 영어",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "3학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_2학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "비즈니스 커뮤니케이션",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "3학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_2학기": 2,
+          "관세무역_2학기": 2,
+          "세무행정_2학기": 2
+        },
+        "weekly_credits": 6
+      },
+      {
+        "name": "기업과 경영",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "3학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_2학기": 4,
+          "세무행정_2학기": 4
+        },
+        "weekly_credits": 8
+      },
+      {
+        "name": "중급 회계",
+        "group": "고시외과목",
+        "area": "기타",
+        "grade": "3학년",
+        "entry_year": 2025,
+        "tracks": {
+          "세무회계_1학기": 4,
+          "관세무역_2학기": 4,
+          "세무행정_1학기": 4
+        },
+        "weekly_credits": 12
+      },
+      {
+        "name": "관세 사무 일반",
+        "group": "고시외과목",
+        "area": "기타",
+        "grade": "3학년",
+        "entry_year": 2025,
+        "tracks": {
+          "관세무역_1학기": 4
+        },
+        "weekly_credits": 4
+      },
+      {
+        "name": "문학",
+        "group": "국어",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "관세무역_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "화법과 언어",
+        "group": "국어",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "세무회계_2학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "대수",
+        "group": "수학",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "관세무역_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "미적분Ｉ",
+        "group": "수학",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "세무회계_2학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "영어Ｉ",
+        "group": "영어",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "관세무역_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "영어Ⅱ",
+        "group": "영어",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "세무회계_2학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "체육1",
+        "group": "체육",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "세무회계_1학기": 2,
+          "관세무역_1학기": 2,
+          "세무행정_1학기": 2
+        },
+        "weekly_credits": 6
+      },
+      {
+        "name": "체육2",
+        "group": "체육",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "세무회계_2학기": 2,
+          "관세무역_2학기": 2,
+          "세무행정_2학기": 2
+        },
+        "weekly_credits": 6
+      },
+      {
+        "name": "컴퓨터 시스템 일반",
+        "group": "기술·가정/정보/제2외국어/한문/교양",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "세무회계_1학기": 4,
+          "관세무역_1학기": 4,
+          "세무행정_1학기": 4
+        },
+        "weekly_credits": 12
+      },
+      {
+        "name": "디지털과 직업 생활",
+        "group": "기술·가정/정보/제2외국어/한문/교양",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "세무회계_2학기": 4,
+          "관세무역_2학기": 4,
+          "세무행정_2학기": 4
+        },
+        "weekly_credits": 12
+      },
+      {
+        "name": "성공적인 직업 생활",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "세무회계_1학기": 4,
+          "관세무역_1학기": 4,
+          "세무행정_1학기": 4
+        },
+        "weekly_credits": 12
+      },
+      {
+        "name": "노동 인권과 산업 안전 보건",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "세무회계_2학기": 4,
+          "관세무역_2학기": 4,
+          "세무행정_2학기": 4
+        },
+        "weekly_credits": 12
+      },
+      {
+        "name": "상업 경제",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "관세무역_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "세무 일반",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "세무회계_2학기": 3,
+          "관세무역_2학기": 3,
+          "세무행정_2학기": 3
+        },
+        "weekly_credits": 9
+      },
+      {
+        "name": "금융 일반",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "세무회계_1학기": 3,
+          "세무행정_1학기": 3
+        },
+        "weekly_credits": 6
+      },
+      {
+        "name": "무역 영어",
+        "group": "고시과목",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "관세무역_2학기": 3
+        },
+        "weekly_credits": 3
+      },
+      {
+        "name": "국제무역입문",
+        "group": "고시외과목",
+        "area": "기타",
+        "grade": "2학년",
+        "entry_year": 2026,
+        "tracks": {
+          "관세무역_1학기": 3
+        },
+        "weekly_credits": 3
+      }
+    ]
+  },
+  "guidance_2027": [
+    {
+      "name": "독서와 작문",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "국어",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "독서와 작문",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "국어",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "독서와 작문",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "국어",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "확률과 통계",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "수학",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "확률과 통계",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "수학",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "확률과 통계",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "수학",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "영어 독해와 작문",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "영어",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "영어 독해와 작문",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "영어",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "영어 독해와 작문",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "영어",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "생애 설계와 자립",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "기술·가정/정보/제2외국어/한문/교양",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "1학기",
+      "credits": 2
+    },
+    {
+      "name": "생애 설계와 자립",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "기술·가정/정보/제2외국어/한문/교양",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "1학기",
+      "credits": 2
+    },
+    {
+      "name": "생애 설계와 자립",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "기술·가정/정보/제2외국어/한문/교양",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "1학기",
+      "credits": 2
+    },
+    {
+      "name": "직무 의사소통",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "직무 의사소통",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "직무 의사소통",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "직무 수학",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "직무 수학",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "직무 수학",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "직무 영어",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "직무 영어",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "직무 영어",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "비즈니스 커뮤니케이션",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "2학기",
+      "credits": 2
+    },
+    {
+      "name": "비즈니스 커뮤니케이션",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "2학기",
+      "credits": 2
+    },
+    {
+      "name": "비즈니스 커뮤니케이션",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "2학기",
+      "credits": 2
+    },
+    {
+      "name": "기업과 경영",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "2학기",
+      "credits": 4
+    },
+    {
+      "name": "기업과 경영",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "2학기",
+      "credits": 4
+    },
+    {
+      "name": "중급 회계",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시외과목",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "1학기",
+      "credits": 4
+    },
+    {
+      "name": "중급 회계",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시외과목",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "2학기",
+      "credits": 4
+    },
+    {
+      "name": "중급 회계",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시외과목",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "1학기",
+      "credits": 4
+    },
+    {
+      "name": "관세 사무 일반",
+      "grade": "3학년",
+      "cohort": "2025입학",
+      "entry_year": 2025,
+      "group": "고시외과목",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "1학기",
+      "credits": 4
+    },
+    {
+      "name": "문학",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "국어",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "문학",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "국어",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "문학",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "국어",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "화법과 언어",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "국어",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "화법과 언어",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "국어",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "화법과 언어",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "국어",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "대수",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "수학",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "대수",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "수학",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "대수",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "수학",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "미적분Ｉ",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "수학",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "미적분Ｉ",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "수학",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "미적분Ｉ",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "수학",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "영어Ｉ",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "영어",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "영어Ｉ",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "영어",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "영어Ｉ",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "영어",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "영어Ⅱ",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "영어",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "영어Ⅱ",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "영어",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "영어Ⅱ",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "영어",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "체육1",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "체육",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "1학기",
+      "credits": 2
+    },
+    {
+      "name": "체육1",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "체육",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "1학기",
+      "credits": 2
+    },
+    {
+      "name": "체육1",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "체육",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "1학기",
+      "credits": 2
+    },
+    {
+      "name": "체육2",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "체육",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "2학기",
+      "credits": 2
+    },
+    {
+      "name": "체육2",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "체육",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "2학기",
+      "credits": 2
+    },
+    {
+      "name": "체육2",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "체육",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "2학기",
+      "credits": 2
+    },
+    {
+      "name": "컴퓨터 시스템 일반",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "기술·가정/정보/제2외국어/한문/교양",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "1학기",
+      "credits": 4
+    },
+    {
+      "name": "컴퓨터 시스템 일반",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "기술·가정/정보/제2외국어/한문/교양",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "1학기",
+      "credits": 4
+    },
+    {
+      "name": "컴퓨터 시스템 일반",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "기술·가정/정보/제2외국어/한문/교양",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "1학기",
+      "credits": 4
+    },
+    {
+      "name": "디지털과 직업 생활",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "기술·가정/정보/제2외국어/한문/교양",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "2학기",
+      "credits": 4
+    },
+    {
+      "name": "디지털과 직업 생활",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "기술·가정/정보/제2외국어/한문/교양",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "2학기",
+      "credits": 4
+    },
+    {
+      "name": "디지털과 직업 생활",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "기술·가정/정보/제2외국어/한문/교양",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "2학기",
+      "credits": 4
+    },
+    {
+      "name": "성공적인 직업 생활",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "1학기",
+      "credits": 4
+    },
+    {
+      "name": "성공적인 직업 생활",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "1학기",
+      "credits": 4
+    },
+    {
+      "name": "성공적인 직업 생활",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "1학기",
+      "credits": 4
+    },
+    {
+      "name": "노동 인권과 산업 안전 보건",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "2학기",
+      "credits": 4
+    },
+    {
+      "name": "노동 인권과 산업 안전 보건",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "2학기",
+      "credits": 4
+    },
+    {
+      "name": "노동 인권과 산업 안전 보건",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "2학기",
+      "credits": 4
+    },
+    {
+      "name": "상업 경제",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "상업 경제",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "상업 경제",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "세무 일반",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "세무 일반",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "세무 일반",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "금융 일반",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무회계",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "금융 일반",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "세무행정",
+      "sem": "1학기",
+      "credits": 3
+    },
+    {
+      "name": "무역 영어",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시과목",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "2학기",
+      "credits": 3
+    },
+    {
+      "name": "국제무역입문",
+      "grade": "2학년",
+      "cohort": "2026입학",
+      "entry_year": 2026,
+      "group": "고시외과목",
+      "area": "기타",
+      "track": "관세무역",
+      "sem": "1학기",
+      "credits": 3
+    }
+  ],
+  "meta": {
+    "school": "대동세무고등학교",
+    "generated": "2026-04",
+    "tracks": [
+      "세무회계",
+      "관세무역",
+      "세무행정"
+    ]
+  }
+}
