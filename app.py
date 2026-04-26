@@ -1,4 +1,4 @@
-# v1.3 - 대동세무고 교육과정 관리 시스템
+# v1.4 - 대동세무고 교육과정 관리 시스템
 import streamlit as st
 import pandas as pd
 import json
@@ -337,7 +337,10 @@ with tab1:
 # ════════════════════════════════════════════════════════════════
 with tab2:
     st.markdown("## 교육과정 편성표")
-    st.caption("입학년도별 교육과정 — 학과 공통 과목은 ○, 학과별로 다른 과목은 해당 학과 표시")
+    st.caption("""
+    **반 구성**: 1학년 8반(공통) | 2·3학년 세무회계 3반 + 관세무역 3반 + 세무행정 2반 = 8반  
+    전 학과 동일 과목은 시수 1개만 표시 / 학과별로 다른 과목은 학과 표시
+    """)
 
     col_f1, col_f2 = st.columns([3, 4])
     with col_f1:
@@ -353,73 +356,121 @@ with tab2:
     if curr_search:
         filtered_curr = [s for s in filtered_curr if curr_search in s["name"] or curr_search in (s["group"] or "")]
 
-    TRACKS = ["세무회계", "관세무역", "세무행정"]
+    # 반 수 (학과별)
+    TRACK_COUNTS = {"세무회계": 3, "관세무역": 3, "세무행정": 2}  # 2·3학년 공통
+    G1_COUNT = 8  # 1학년 반 수
 
-    def sem_label(track_sems):
-        """운영 학기를 간단히 표현: 1학기만→'1', 2학기만→'2', 둘다→'1·2', 없음→''"""
-        has1 = any("1학기" in k for k in track_sems)
-        has2 = any("2학기" in k for k in track_sems)
-        if has1 and has2: return "1·2학기"
-        if has1: return "1학기"
-        if has2: return "2학기"
-        return ""
-
-    def make_cell(sch, grade, tracks):
+    def get_track_info(sch, grade):
         """
-        - 1학년: 공통이므로 학기만 표시
-        - 2·3학년: 전 학과 동일하면 ○+학기, 학과별로 다르면 학과명 나열
+        반환: {track: (시수, 학기)} 또는 None(해당 학년 없음)
+        시수는 1반당 시수 (단위배당표 값 그대로)
         """
-        if grade == "1학년":
-            keys = [k for k in sch if k.startswith("1학년|공통|")]
-            return sem_label(keys)
-
-        # 학과별 운영 여부 수집
-        track_info = {}
+        tracks = ["세무회계", "관세무역", "세무행정"]
+        result = {}
         for tr in tracks:
-            keys = [k for k in sch if k.startswith(f"{grade}|{tr}|")]
-            if keys:
-                track_info[tr] = sem_label(keys)
+            s1 = sch.get(f"{grade}|{tr}|1학기")
+            s2 = sch.get(f"{grade}|{tr}|2학기")
+            if s1 or s2:
+                result[tr] = (s1 or 0, s2 or 0)
+        return result if result else None
 
+    def format_track_cell(track_info):
+        """
+        전 과 동일 → "3 / 1학기" 형식
+        과별 다름  → "세무·행정: 3/1학기, 관세: -" 형식
+        """
         if not track_info:
-            return ""
+            return "-", 0
 
-        # 모두 동일한 학기면 ○
-        sems = list(track_info.values())
-        if len(set(sems)) == 1 and len(track_info) == len(tracks):
-            return f"○ {sems[0]}"
+        tracks = ["세무회계", "관세무역", "세무행정"]
+        counts = TRACK_COUNTS
 
-        # 일부 학과만 운영
-        return " / ".join(f"{tr[:2]}:{sem}" for tr, sem in track_info.items())
+        # 모든 과가 있고 값이 동일한지 확인
+        all_s1 = set(v[0] for v in track_info.values())
+        all_s2 = set(v[1] for v in track_info.values())
+        all_tracks_present = all(tr in track_info for tr in tracks)
+
+        # 전체 필요 시수 계산
+        total = sum(
+            (v[0] + v[1]) * counts.get(tr, 0)
+            for tr, v in track_info.items()
+        )
+
+        if all_tracks_present and len(all_s1) == 1 and len(all_s2) == 1:
+            # 전 과 동일
+            s1v = list(all_s1)[0]
+            s2v = list(all_s2)[0]
+            if s1v and s2v:
+                label = f"{s1v} (1·2학기)"
+            elif s1v:
+                label = f"{s1v} (1학기)"
+            else:
+                label = f"{s2v} (2학기)"
+            return label, total
+        else:
+            # 과별로 다름
+            parts = []
+            abbr = {"세무회계": "세무", "관세무역": "관세", "세무행정": "행정"}
+            for tr in tracks:
+                if tr in track_info:
+                    s1v, s2v = track_info[tr]
+                    if s1v and s2v:
+                        parts.append(f"{abbr[tr]}:{s1v}(1·2)")
+                    elif s1v:
+                        parts.append(f"{abbr[tr]}:{s1v}(1)")
+                    elif s2v:
+                        parts.append(f"{abbr[tr]}:{s2v}(2)")
+                # 없는 과는 표시 안 함
+            return " / ".join(parts), total
 
     rows = []
     for s in filtered_curr:
         sch = s["schedule"]
-        grade_keys = set(k.split("|")[0] for k in sch)
-        row = {
+
+        # 1학년
+        g1_s1 = sch.get("1학년|공통|1학기", "")
+        g1_s2 = sch.get("1학년|공통|2학기", "")
+        if g1_s1 and g1_s2:
+            g1_label = f"{g1_s1} (1·2학기)"
+            g1_total = (g1_s1 + g1_s2) * G1_COUNT
+        elif g1_s1:
+            g1_label = f"{g1_s1} (1학기)"
+            g1_total = g1_s1 * G1_COUNT
+        elif g1_s2:
+            g1_label = f"{g1_s2} (2학기)"
+            g1_total = g1_s2 * G1_COUNT
+        else:
+            g1_label = "-"
+            g1_total = 0
+
+        g2_info = get_track_info(sch, "2학년")
+        g3_info = get_track_info(sch, "3학년")
+        g2_label, g2_total = format_track_cell(g2_info)
+        g3_label, g3_total = format_track_cell(g3_info)
+
+        grand_total = g1_total + g2_total + g3_total
+
+        rows.append({
             "입학": str(s["entry_year"]),
             "교과군": s["group"] or "-",
             "과목명": s["name"],
             "기준학점": s["std_credits"],
             "운영학점": s["op_credits"],
-            "1학년": make_cell(sch, "1학년", TRACKS),
-            "2학년": make_cell(sch, "2학년", TRACKS),
-            "3학년": make_cell(sch, "3학년", TRACKS),
-        }
-        rows.append(row)
+            "1학년 (8반)": g1_label,
+            "2학년 (8반)": g2_label,
+            "2학년 전체시수": g2_total if g2_total else "",
+            "3학년 (8반)": g3_label,
+            "3학년 전체시수": g3_total if g3_total else "",
+        })
 
     if rows:
         df_curr = pd.DataFrame(rows)
-        st.dataframe(
-            df_curr,
-            use_container_width=True,
-            hide_index=True,
-            column_config={
-                "1학년": st.column_config.TextColumn("1학년", width="medium"),
-                "2학년": st.column_config.TextColumn("2학년", width="medium"),
-                "3학년": st.column_config.TextColumn("3학년", width="medium"),
-            }
+        st.dataframe(df_curr, use_container_width=True, hide_index=True)
+        st.caption(
+            f"총 {len(rows)}개 과목 | "
+            "**1반당 시수** 표시 + 전체시수(반수×시수) | "
+            "전 학과 동일 과목은 시수만, 학과별 다른 과목은 학과명 표시"
         )
-        st.caption(f"총 {len(rows)}개 과목 | ○ = 전 학과 공통 운영 / 학과명:학기 = 해당 학과만 운영")
     else:
         st.info("조건에 맞는 과목이 없습니다.")
 
