@@ -192,10 +192,7 @@ def _parse_alloc_sheet(df, school_year):
             except Exception:
                 total = 0
 
-            notes = " ".join(
-                _g(rv, i) for i in range(29, 36)
-                if _g(rv, i) and _g(rv, i) not in {"nan", "0", "1"}
-            ).strip()
+            notes = ""  # AE열 이후는 메모란으로 파싱하지 않음
             is_temp = col1 in {"기간제", "강사", "원어민", "시간강사", "정교사", "순회교사"}
 
             if total > 0:
@@ -297,3 +294,73 @@ def build_guidance_2027(curriculum):
                     "credits": credits,
                 })
     return items
+
+# ── 교원정보 입력양식 파싱 ────────────────────────────────────────────────────
+def parse_teacher_form(file_obj):
+    """
+    교원정보_입력양식.xlsx → 교원 데이터 리스트
+    컬럼: No / 교사명 / 교원유형 / 소속교과 / 기본시수 /
+          주요과목 / 상치교과 / 상치과목 / 상치시수 / 학년도 / 메모
+    """
+    content = file_obj.read() if hasattr(file_obj, "read") else open(file_obj, "rb").read()
+    df = pd.read_excel(BytesIO(content), sheet_name="교원정보", header=None)
+
+    teachers_by_year = {}
+
+    for idx, row in df.iterrows():
+        if idx < 5:          # 헤더 5행 스킵
+            continue
+        rv = list(row)
+
+        def g(i):
+            if i < len(rv) and pd.notna(rv[i]) and str(rv[i]).strip() not in {"", "nan"}:
+                return str(rv[i]).strip()
+            return ""
+
+        name = g(1)
+        if not name or name.startswith("No"):
+            continue
+
+        typ        = g(2)   # 교원 유형
+        dept       = g(3)   # 소속 교과
+        try:
+            credits = int(float(g(4))) if g(4) else 0
+        except ValueError:
+            credits = 0
+        main_subj  = g(5)   # 주요 담당 과목
+        cross_dept = g(6)   # 상치 교과
+        cross_subj = g(7)   # 상치 과목명
+        try:
+            cross_cr = int(float(g(8))) if g(8) else 0
+        except ValueError:
+            cross_cr = 0
+        try:
+            year = int(float(g(9))) if g(9) else 2026
+        except ValueError:
+            year = 2026
+        memo = g(10)
+
+        is_temp = typ in {"기간제교사", "시간강사"}
+        has_cross = cross_dept not in {"없음", "", "nan"} and cross_subj
+
+        t = {
+            "name":         name,
+            "dept":         dept,
+            "type":         typ,
+            "school_year":  year,
+            "total_credits": credits,
+            "main_subjects": main_subj,
+            "cross_dept":   cross_dept if has_cross else "",
+            "cross_subject":cross_subj if has_cross else "",
+            "cross_credits":cross_cr   if has_cross else 0,
+            "notes":        memo,
+            "is_temp":      is_temp,
+            "is_cross":     has_cross,
+        }
+
+        yr_key = str(year)
+        if yr_key not in teachers_by_year:
+            teachers_by_year[yr_key] = []
+        teachers_by_year[yr_key].append(t)
+
+    return teachers_by_year

@@ -1,11 +1,11 @@
-# v1.2 - 대동세무고 교육과정 관리 시스템
+# v1.3 - 대동세무고 교육과정 관리 시스템
 import streamlit as st
 import pandas as pd
 import json
 from pathlib import Path
 import io
 
-from parser import parse_curriculum_file, parse_allocation_file, build_yearly_view, build_guidance_2027
+from parser import parse_curriculum_file, parse_allocation_file, build_yearly_view, build_guidance_2027, parse_teacher_form
 from storage import load_edits, save_edits
 
 st.set_page_config(
@@ -103,6 +103,8 @@ if "guidance" not in st.session_state:
     st.session_state.guidance = None
 if "edits" not in st.session_state:
     st.session_state.edits = load_edits()
+if "teacher_form" not in st.session_state:
+    st.session_state.teacher_form = None
 
 # ── 사이드바 ──────────────────────────────────────────────────────────────────
 with st.sidebar:
@@ -125,6 +127,13 @@ with st.sidebar:
         help="교과배정표 연습 xlsx"
     )
 
+    teacher_file = st.file_uploader(
+        "교원정보 양식 (선택)",
+        type=["xlsx"],
+        key="teacher_upload",
+        help="교원정보_입력양식.xlsx — 입력 후 업로드하면 교사 수급 분석에 반영됩니다"
+    )
+
     if st.button("🔄 데이터 파싱", type="primary", use_container_width=True):
         if curr_file and alloc_file:
             with st.spinner("파싱 중..."):
@@ -137,12 +146,21 @@ with st.sidebar:
                     }
                     guidance = build_guidance_2027(curriculum)
 
+                    # 교원양식이 있으면 우선 적용
+                    if teacher_file:
+                        tf = parse_teacher_form(teacher_file)
+                        # 교원양식 데이터로 기존 teachers 덮어쓰기
+                        for yr_k, t_list in tf.items():
+                            teachers[yr_k] = t_list
+                        st.session_state.teacher_form = tf
+
                     st.session_state.curriculum = curriculum
                     st.session_state.teachers = teachers
                     st.session_state.dept_groups = dept_groups
                     st.session_state.yearly_view = yearly_view
                     st.session_state.guidance = guidance
-                    st.success(f"✅ 파싱 완료!\n과목 {len(curriculum)}개 · 교사 {sum(len(v) for v in teachers.values())}명")
+                    n_teachers = sum(len(v) for v in teachers.values())
+                    st.success(f"✅ 파싱 완료!\n과목 {len(curriculum)}개 · 교사 {n_teachers}명")
                 except Exception as e:
                     st.error(f"파싱 오류: {e}")
         else:
@@ -150,6 +168,14 @@ with st.sidebar:
 
     # 기본 데이터 로드 (파일 없을 때)
     default_path = Path(__file__).parent / "data" / "curriculum_data.json"
+    # 교원양식 단독 업로드 (교육과정 없이도)
+    if teacher_file and st.session_state.curriculum is not None:
+        if st.button("교원 정보만 갱신", use_container_width=True):
+            tf = parse_teacher_form(teacher_file)
+            st.session_state.teachers = {**st.session_state.teachers, **tf}
+            st.session_state.teacher_form = tf
+            st.success("✅ 교원 정보 갱신 완료!")
+
     if st.session_state.curriculum is None and default_path.exists():
         with open(default_path, encoding="utf-8") as f:
             d = json.load(f)
@@ -304,16 +330,7 @@ with tab1:
                 rows.append(row)
 
             df = pd.DataFrame(rows)
-            st.dataframe(
-                df,
-                use_container_width=True,
-                hide_index=True,
-                column_config={
-                    "주간학점": st.column_config.ProgressColumn(
-                        "주간학점", min_value=0, max_value=40, format="%d"
-                    )
-                }
-            )
+            st.dataframe(df, use_container_width=True, hide_index=True)
 
 # ════════════════════════════════════════════════════════════════
 # TAB 2: 교육과정 편성표
@@ -434,9 +451,21 @@ with tab3:
 
     if over_t:
         st.warning(f"⚠️ 시수 초과 우려: {', '.join(t['name'] for t in over_t)}")
-    crossed = [t for t in real_t if t.get("notes") and len(t["notes"]) > 2]
+
+    # 교원양식 기반 상치교과 (notes 기반 아님)
+    crossed = [t for t in teachers if t.get("is_cross")]
     if crossed:
-        st.warning(f"🔄 상치교과 주의: {', '.join(t['name']+'('+t['notes'][:30]+')' for t in crossed)}")
+        st.warning(f"🔄 상치교과 배정: {len(crossed)}명")
+        cross_cols = st.columns(min(len(crossed), 4))
+        for i, t in enumerate(crossed):
+            with cross_cols[i % 4]:
+                st.markdown(f"""
+<div style="background:#2D1200;border:1px solid #7C2D12;border-radius:8px;padding:10px 12px;margin-bottom:6px">
+  <div style="font-size:12px;font-weight:700;color:#e2e8f0">{t['name']}</div>
+  <div style="font-size:10px;color:#94a3b8">{t['dept']}</div>
+  <div style="font-size:11px;color:#fb923c;margin-top:4px">→ {t.get('cross_dept','')} · {t.get('cross_subject','')}</div>
+  <div style="font-size:10px;color:#64748b">{t.get('cross_credits',0)}시수</div>
+</div>""", unsafe_allow_html=True)
 
     st.markdown("---")
     col_left, col_right = st.columns(2)
@@ -495,16 +524,7 @@ with tab3:
                 "상태": status,
             })
         if t_rows:
-            st.dataframe(
-                pd.DataFrame(t_rows),
-                use_container_width=True,
-                hide_index=True,
-                column_config={
-                    "시수": st.column_config.ProgressColumn(
-                        "시수", min_value=0, max_value=22, format="%d"
-                    )
-                }
-            )
+            st.dataframe(pd.DataFrame(t_rows), use_container_width=True, hide_index=True)
 
 # ════════════════════════════════════════════════════════════════
 # TAB 4: 상치교과 관리
@@ -512,6 +532,12 @@ with tab3:
 with tab4:
     st.markdown("## 🔄 상치교과 관리")
     st.caption("수기로 편집하고 저장합니다. 사이드바의 저장 버튼으로 JSON 파일에 기록됩니다.")
+
+    tf = st.session_state.get("teacher_form")
+    if tf:
+        st.success("✅ 교원정보 양식 데이터가 반영되어 있습니다. 아래에서 수정 후 저장하세요.")
+    else:
+        st.info("💡 교원정보 양식(xlsx)을 사이드바에서 업로드하면 상치교과가 자동으로 채워집니다.")
 
     cross_yr = st.selectbox("학년도", [2025, 2026, 2027, 2028],
                              index=1, format_func=lambda y: f"{y}학년도", key="cross_yr")
@@ -522,20 +548,22 @@ with tab4:
         edits["cross_teaching"] = {}
     if cross_key not in edits["cross_teaching"]:
         auto_rows = []
-        for t in teachers_all.get(cross_key, []):
-            if t.get("notes") and len(t["notes"]) > 2 and not t["is_temp"]:
+        # 교원양식 우선, 없으면 빈 행
+        tf = st.session_state.get("teacher_form") or {}
+        for t in tf.get(cross_key, []):
+            if t.get("is_cross"):
                 auto_rows.append({
                     "교사명": t["name"],
                     "소속교과": t["dept"],
-                    "상치담당과목": t["notes"],
+                    "상치담당과목": f"{t.get('cross_dept','')} / {t.get('cross_subject','')}",
                     "학년": "",
                     "학기": "",
-                    "시수": "",
-                    "메모": "",
+                    "시수": t.get("cross_credits", ""),
+                    "메모": t.get("notes", ""),
                 })
-        edits["cross_teaching"][cross_key] = auto_rows if auto_rows else [
-            {"교사명": "", "소속교과": "", "상치담당과목": "", "학년": "", "학기": "", "시수": "", "메모": ""}
-        ]
+        if not auto_rows:
+            auto_rows = [{"교사명": "", "소속교과": "", "상치담당과목": "", "학년": "", "학기": "", "시수": "", "메모": ""}]
+        edits["cross_teaching"][cross_key] = auto_rows
 
     # 요약 카드
     existing = edits.get("cross_teaching", {}).get(cross_key, [])
